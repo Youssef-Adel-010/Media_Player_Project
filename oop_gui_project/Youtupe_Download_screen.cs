@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DesignTest
 {
-    public partial class Youtupe_Download_screen : UserControl
+    public partial class Youtube_Download_screen : UserControl
     {
-        public Youtupe_Download_screen()
+        public Youtube_Download_screen()
         {
             InitializeComponent();
         }

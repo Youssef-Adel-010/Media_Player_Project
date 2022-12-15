@@ -1,6 +1,6 @@
 ﻿namespace oop_gui_project
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.LeftSidePanel = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.Home = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -126,13 +126,13 @@
             this.Home.IconVisible = true;
             this.Home.IconZoom = 48D;
             this.Home.IsTab = false;
-            this.Home.Location = new System.Drawing.Point(-2, 159);
+            this.Home.Location = new System.Drawing.Point(0, 150);
             this.Home.Name = "Home";
             this.Home.Normalcolor = System.Drawing.Color.Transparent;
             this.Home.OnHovercolor = System.Drawing.Color.DarkMagenta;
             this.Home.OnHoverTextColor = System.Drawing.Color.White;
             this.Home.selected = false;
-            this.Home.Size = new System.Drawing.Size(185, 52);
+            this.Home.Size = new System.Drawing.Size(175, 50);
             this.Home.TabIndex = 10;
             this.Home.Text = "Home";
             this.Home.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -162,13 +162,13 @@
             this.AboutUsbtn.IconVisible = true;
             this.AboutUsbtn.IconZoom = 45D;
             this.AboutUsbtn.IsTab = false;
-            this.AboutUsbtn.Location = new System.Drawing.Point(-3, 455);
+            this.AboutUsbtn.Location = new System.Drawing.Point(0, 450);
             this.AboutUsbtn.Name = "AboutUsbtn";
             this.AboutUsbtn.Normalcolor = System.Drawing.Color.Transparent;
             this.AboutUsbtn.OnHovercolor = System.Drawing.Color.DarkMagenta;
             this.AboutUsbtn.OnHoverTextColor = System.Drawing.Color.White;
             this.AboutUsbtn.selected = false;
-            this.AboutUsbtn.Size = new System.Drawing.Size(186, 54);
+            this.AboutUsbtn.Size = new System.Drawing.Size(175, 50);
             this.AboutUsbtn.TabIndex = 9;
             this.AboutUsbtn.Text = "About Us";
             this.AboutUsbtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -198,13 +198,13 @@
             this.FavouritsBtn.IconVisible = true;
             this.FavouritsBtn.IconZoom = 40D;
             this.FavouritsBtn.IsTab = false;
-            this.FavouritsBtn.Location = new System.Drawing.Point(-4, 351);
+            this.FavouritsBtn.Location = new System.Drawing.Point(0, 350);
             this.FavouritsBtn.Name = "FavouritsBtn";
             this.FavouritsBtn.Normalcolor = System.Drawing.Color.Transparent;
             this.FavouritsBtn.OnHovercolor = System.Drawing.Color.DarkMagenta;
             this.FavouritsBtn.OnHoverTextColor = System.Drawing.Color.White;
             this.FavouritsBtn.selected = false;
-            this.FavouritsBtn.Size = new System.Drawing.Size(185, 52);
+            this.FavouritsBtn.Size = new System.Drawing.Size(175, 50);
             this.FavouritsBtn.TabIndex = 5;
             this.FavouritsBtn.Text = "Add To Favourits";
             this.FavouritsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -232,9 +232,10 @@
             this.DownloadBtn.BackColor = System.Drawing.Color.Transparent;
             this.DownloadBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.DownloadBtn.BorderRadius = 0;
-            this.DownloadBtn.ButtonText = "Youtupe Download";
+            this.DownloadBtn.ButtonText = "Youtube Download";
             this.DownloadBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DownloadBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.DownloadBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DownloadBtn.Iconcolor = System.Drawing.Color.Transparent;
             this.DownloadBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("DownloadBtn.Iconimage")));
             this.DownloadBtn.Iconimage_right = null;
@@ -247,15 +248,16 @@
             this.DownloadBtn.IconVisible = true;
             this.DownloadBtn.IconZoom = 40D;
             this.DownloadBtn.IsTab = false;
-            this.DownloadBtn.Location = new System.Drawing.Point(-1, 409);
+            this.DownloadBtn.Location = new System.Drawing.Point(0, 400);
+            this.DownloadBtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.DownloadBtn.Name = "DownloadBtn";
             this.DownloadBtn.Normalcolor = System.Drawing.Color.Transparent;
             this.DownloadBtn.OnHovercolor = System.Drawing.Color.DarkMagenta;
             this.DownloadBtn.OnHoverTextColor = System.Drawing.Color.White;
             this.DownloadBtn.selected = false;
-            this.DownloadBtn.Size = new System.Drawing.Size(187, 46);
+            this.DownloadBtn.Size = new System.Drawing.Size(175, 50);
             this.DownloadBtn.TabIndex = 4;
-            this.DownloadBtn.Text = "Youtupe Download";
+            this.DownloadBtn.Text = "Youtube Download";
             this.DownloadBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.DownloadBtn.Textcolor = System.Drawing.Color.White;
             this.DownloadBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -273,7 +275,7 @@
             this.MaxmizeBtn.TabIndex = 7;
             this.MaxmizeBtn.TabStop = false;
             this.MaxmizeBtn.Zoom = 10;
-            this.MaxmizeBtn.Click += new System.EventHandler(this.MaxmizeBtn_Click);
+            this.MaxmizeBtn.Click += new System.EventHandler(this.MaximizeBtn_Click);
             // 
             // CloseBtn
             // 
@@ -311,13 +313,13 @@
             this.BrouseBtn.IconVisible = true;
             this.BrouseBtn.IconZoom = 40D;
             this.BrouseBtn.IsTab = false;
-            this.BrouseBtn.Location = new System.Drawing.Point(-2, 304);
+            this.BrouseBtn.Location = new System.Drawing.Point(0, 300);
             this.BrouseBtn.Name = "BrouseBtn";
             this.BrouseBtn.Normalcolor = System.Drawing.Color.Transparent;
             this.BrouseBtn.OnHovercolor = System.Drawing.Color.DarkMagenta;
             this.BrouseBtn.OnHoverTextColor = System.Drawing.Color.White;
             this.BrouseBtn.selected = false;
-            this.BrouseBtn.Size = new System.Drawing.Size(187, 49);
+            this.BrouseBtn.Size = new System.Drawing.Size(175, 50);
             this.BrouseBtn.TabIndex = 3;
             this.BrouseBtn.Text = "Browse";
             this.BrouseBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -346,19 +348,19 @@
             this.nowplayingbtn.IconVisible = true;
             this.nowplayingbtn.IconZoom = 40D;
             this.nowplayingbtn.IsTab = false;
-            this.nowplayingbtn.Location = new System.Drawing.Point(-1, 255);
+            this.nowplayingbtn.Location = new System.Drawing.Point(0, 250);
             this.nowplayingbtn.Name = "nowplayingbtn";
             this.nowplayingbtn.Normalcolor = System.Drawing.Color.Transparent;
             this.nowplayingbtn.OnHovercolor = System.Drawing.Color.DarkMagenta;
             this.nowplayingbtn.OnHoverTextColor = System.Drawing.Color.White;
             this.nowplayingbtn.selected = false;
-            this.nowplayingbtn.Size = new System.Drawing.Size(187, 49);
+            this.nowplayingbtn.Size = new System.Drawing.Size(175, 50);
             this.nowplayingbtn.TabIndex = 2;
             this.nowplayingbtn.Text = "Playing Now";
             this.nowplayingbtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.nowplayingbtn.Textcolor = System.Drawing.Color.White;
             this.nowplayingbtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nowplayingbtn.Click += new System.EventHandler(this.nowplayingbtn_Click);
+            this.nowplayingbtn.Click += new System.EventHandler(this.NowPlayingBtn_Click);
             // 
             // PlayListBtn
             // 
@@ -367,7 +369,7 @@
             this.PlayListBtn.BackColor = System.Drawing.Color.Transparent;
             this.PlayListBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PlayListBtn.BorderRadius = 0;
-            this.PlayListBtn.ButtonText = "playlist";
+            this.PlayListBtn.ButtonText = "Playlist";
             this.PlayListBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PlayListBtn.DisabledColor = System.Drawing.SystemColors.GrayText;
             this.PlayListBtn.Iconcolor = System.Drawing.Color.Transparent;
@@ -382,15 +384,16 @@
             this.PlayListBtn.IconVisible = true;
             this.PlayListBtn.IconZoom = 40D;
             this.PlayListBtn.IsTab = false;
-            this.PlayListBtn.Location = new System.Drawing.Point(0, 209);
+            this.PlayListBtn.Location = new System.Drawing.Point(0, 200);
+            this.PlayListBtn.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.PlayListBtn.Name = "PlayListBtn";
             this.PlayListBtn.Normalcolor = System.Drawing.Color.Transparent;
             this.PlayListBtn.OnHovercolor = System.Drawing.Color.DarkMagenta;
             this.PlayListBtn.OnHoverTextColor = System.Drawing.Color.White;
             this.PlayListBtn.selected = false;
-            this.PlayListBtn.Size = new System.Drawing.Size(187, 49);
+            this.PlayListBtn.Size = new System.Drawing.Size(175, 50);
             this.PlayListBtn.TabIndex = 1;
-            this.PlayListBtn.Text = "playlist";
+            this.PlayListBtn.Text = "Playlist";
             this.PlayListBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.PlayListBtn.Textcolor = System.Drawing.Color.White;
             this.PlayListBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -618,7 +621,7 @@
             this.base_screen1.Size = new System.Drawing.Size(640, 443);
             this.base_screen1.TabIndex = 0;
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -629,7 +632,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.LeftSidePanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).EndInit();

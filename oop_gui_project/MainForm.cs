@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace oop_gui_project
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
@@ -18,7 +18,7 @@ namespace oop_gui_project
             Environment.Exit(0);
         }
 
-        private void MaxmizeBtn_Click(object sender, EventArgs e)
+        private void MaximizeBtn_Click(object sender, EventArgs e)
         {
             if (this.WindowState == FormWindowState.Maximized)
             {
@@ -37,7 +37,7 @@ namespace oop_gui_project
 
 
         ///////////////////////////////////////////////////////////////////
-        // Here We Will Code The Left-Side Buttons.
+        // Left-Side Buttons.
 
         private void AddUserControl(UserControl user)
         {
@@ -50,30 +50,30 @@ namespace oop_gui_project
         }
         private void Home_Click(object sender, EventArgs e)
         {
-            Base_screen bse = new Base_screen();
-            AddUserControl(bse);
+            Base_screen base_scr = new Base_screen();
+            AddUserControl(base_scr);
         }
 
         private void PlayListBtn_Click(object sender, EventArgs e)
         {
-            PlayList_screen plylsc = new PlayList_screen();
-            AddUserControl(plylsc);
+            PlayList_screen playlist_scr = new PlayList_screen();
+            AddUserControl(playlist_scr);
         }
-        private void nowplayingbtn_Click(object sender, EventArgs e)
+        private void NowPlayingBtn_Click(object sender, EventArgs e)
         {
-            Playing_now_screen plynwsc = new Playing_now_screen();
-            AddUserControl(plynwsc);
+            Playing_now_screen now_playing_scr = new Playing_now_screen();
+            AddUserControl(now_playing_scr);
         }
         private void DownloadBtn_Click(object sender, EventArgs e)
         {
-            Youtupe_Download_screen ytpd = new Youtupe_Download_screen();
-            AddUserControl(ytpd);
+            Youtube_Download_screen yt_download_scr = new Youtube_Download_screen();
+            AddUserControl(yt_download_scr);
         }
 
         private void AboutUsbtn_Click(object sender, EventArgs e)
         {
-            About_us abt = new About_us();
-            AddUserControl(abt);
+            About_us about_scr = new About_us();
+            AddUserControl(about_scr);
         }
 
         ///////////////////////////////////////////////////////////////////
