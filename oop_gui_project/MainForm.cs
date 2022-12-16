@@ -76,6 +76,12 @@ namespace oop_gui_project
             AddUserControl(about_scr);
         }
 
+        private void SpeechBtn_Click(object sender, EventArgs e)
+        {
+            Speech_read_screen speech_scr = new Speech_read_screen();
+            AddUserControl(speech_scr);
+        }
+
         ///////////////////////////////////////////////////////////////////
 
     }
