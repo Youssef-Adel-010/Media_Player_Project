@@ -82,6 +82,11 @@ namespace oop_gui_project
             AddUserControl(speech_scr);
         }
 
+        private void AudioSlider_ValueChanged(object sender, EventArgs e)
+        {
+            AudioLabel.Text = AudioSlider.Value.ToString();
+        }
+
         ///////////////////////////////////////////////////////////////////
 
     }

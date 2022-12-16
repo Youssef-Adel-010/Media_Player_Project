@@ -16,5 +16,10 @@ namespace DesignTest
         {
             InitializeComponent();
         }
+
+        private void TheListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

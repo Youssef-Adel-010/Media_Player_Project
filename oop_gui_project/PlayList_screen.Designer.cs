@@ -44,6 +44,7 @@
             this.TheListBox.Name = "TheListBox";
             this.TheListBox.Size = new System.Drawing.Size(640, 443);
             this.TheListBox.TabIndex = 11;
+            this.TheListBox.SelectedIndexChanged += new System.EventHandler(this.TheListBox_SelectedIndexChanged);
             // 
             // PlayList_screen
             // 

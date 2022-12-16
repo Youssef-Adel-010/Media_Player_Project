@@ -94,7 +94,6 @@ C:\Users\pc\Documents\GitHub\Media_Player_Project\oop_gui_project\obj\Debug\oop_
 C:\Users\pc\Documents\GitHub\Media_Player_Project\oop_gui_project\obj\Debug\DesignTest.Playing_now_screen.resources
 C:\Users\pc\Documents\GitHub\Media_Player_Project\oop_gui_project\obj\Debug\DesignTest.PlayList_screen.resources
 C:\Users\pc\Documents\GitHub\Media_Player_Project\oop_gui_project\obj\Debug\DesignTest.Properties.Resources.resources
-C:\Users\pc\Documents\GitHub\Media_Player_Project\oop_gui_project\obj\Debug\DesignTest.Youtupe_Download_screen.resources
 C:\Users\pc\Documents\GitHub\Media_Player_Project\oop_gui_project\obj\Debug\MediaPlayer.csproj.GenerateResource.cache
 C:\Users\pc\Documents\GitHub\Media_Player_Project\oop_gui_project\obj\Debug\MediaPlayer.csproj.CoreCompileInputs.cache
 C:\Users\pc\Documents\GitHub\Media_Player_Project\oop_gui_project\obj\Debug\MediaPlayer.csproj.CopyComplete
@@ -128,3 +127,5 @@ C:\oop_project\media_player\oop_gui_project\obj\Debug\MediaPlayer.csproj.CoreCom
 C:\oop_project\media_player\oop_gui_project\obj\Debug\MediaPlayer.csproj.CopyComplete
 C:\oop_project\media_player\oop_gui_project\obj\Debug\DesignTest.exe
 C:\oop_project\media_player\oop_gui_project\obj\Debug\DesignTest.pdb
+C:\Users\pc\Documents\GitHub\Media_Player_Project\oop_gui_project\obj\Debug\DesignTest.Speech_read_screen.resources
+C:\Users\pc\Documents\GitHub\Media_Player_Project\oop_gui_project\obj\Debug\DesignTest.Youtube_Download_screen.resources
