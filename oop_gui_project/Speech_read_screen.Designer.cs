@@ -61,11 +61,12 @@
             // 
             // bunifuCustomLabel1
             // 
+            this.bunifuCustomLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(104, 327);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(8, 371);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(71, 26);
             this.bunifuCustomLabel1.TabIndex = 6;
@@ -73,11 +74,12 @@
             // 
             // bunifuCustomLabel2
             // 
+            this.bunifuCustomLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(104, 377);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(8, 421);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(78, 26);
             this.bunifuCustomLabel2.TabIndex = 7;
@@ -86,12 +88,13 @@
             // 
             // BrowseBtn
             // 
+            this.BrowseBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BrowseBtn.BackColor = System.Drawing.Color.LightGray;
             this.BrowseBtn.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BrowseBtn.ForeColor = System.Drawing.Color.Black;
-            this.BrowseBtn.Location = new System.Drawing.Point(387, 295);
+            this.BrowseBtn.Location = new System.Drawing.Point(376, 320);
             this.BrowseBtn.Name = "BrowseBtn";
-            this.BrowseBtn.Size = new System.Drawing.Size(106, 41);
+            this.BrowseBtn.Size = new System.Drawing.Size(128, 41);
             this.BrowseBtn.TabIndex = 8;
             this.BrowseBtn.Text = "Browse";
             this.BrowseBtn.UseVisualStyleBackColor = false;
@@ -99,12 +102,13 @@
             // 
             // PauseBtn
             // 
+            this.PauseBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.PauseBtn.BackColor = System.Drawing.Color.LightGray;
             this.PauseBtn.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PauseBtn.ForeColor = System.Drawing.Color.Black;
-            this.PauseBtn.Location = new System.Drawing.Point(387, 342);
+            this.PauseBtn.Location = new System.Drawing.Point(376, 367);
             this.PauseBtn.Name = "PauseBtn";
-            this.PauseBtn.Size = new System.Drawing.Size(106, 41);
+            this.PauseBtn.Size = new System.Drawing.Size(128, 41);
             this.PauseBtn.TabIndex = 10;
             this.PauseBtn.Text = "Pause";
             this.PauseBtn.UseVisualStyleBackColor = false;
@@ -112,12 +116,13 @@
             // 
             // ReadBtn
             // 
+            this.ReadBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ReadBtn.BackColor = System.Drawing.Color.LightGray;
             this.ReadBtn.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReadBtn.ForeColor = System.Drawing.Color.Black;
-            this.ReadBtn.Location = new System.Drawing.Point(499, 295);
+            this.ReadBtn.Location = new System.Drawing.Point(510, 320);
             this.ReadBtn.Name = "ReadBtn";
-            this.ReadBtn.Size = new System.Drawing.Size(99, 41);
+            this.ReadBtn.Size = new System.Drawing.Size(121, 41);
             this.ReadBtn.TabIndex = 11;
             this.ReadBtn.Text = "Read";
             this.ReadBtn.UseVisualStyleBackColor = false;
@@ -125,12 +130,13 @@
             // 
             // ResumeBtn
             // 
+            this.ResumeBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ResumeBtn.BackColor = System.Drawing.Color.LightGray;
             this.ResumeBtn.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ResumeBtn.ForeColor = System.Drawing.Color.Black;
-            this.ResumeBtn.Location = new System.Drawing.Point(499, 342);
+            this.ResumeBtn.Location = new System.Drawing.Point(510, 367);
             this.ResumeBtn.Name = "ResumeBtn";
-            this.ResumeBtn.Size = new System.Drawing.Size(99, 41);
+            this.ResumeBtn.Size = new System.Drawing.Size(121, 41);
             this.ResumeBtn.TabIndex = 12;
             this.ResumeBtn.Text = "Resume";
             this.ResumeBtn.UseVisualStyleBackColor = false;
@@ -138,12 +144,13 @@
             // 
             // SaveAsRecBtn
             // 
+            this.SaveAsRecBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.SaveAsRecBtn.BackColor = System.Drawing.Color.LightGray;
             this.SaveAsRecBtn.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveAsRecBtn.ForeColor = System.Drawing.Color.Black;
-            this.SaveAsRecBtn.Location = new System.Drawing.Point(387, 389);
+            this.SaveAsRecBtn.Location = new System.Drawing.Point(376, 414);
             this.SaveAsRecBtn.Name = "SaveAsRecBtn";
-            this.SaveAsRecBtn.Size = new System.Drawing.Size(106, 41);
+            this.SaveAsRecBtn.Size = new System.Drawing.Size(128, 41);
             this.SaveAsRecBtn.TabIndex = 13;
             this.SaveAsRecBtn.Text = "Save as wav";
             this.SaveAsRecBtn.UseVisualStyleBackColor = false;
@@ -153,18 +160,22 @@
             // 
             this.SpeechTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.SpeechTextBox.BackColor = System.Drawing.SystemColors.InfoText;
-            this.SpeechTextBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.SpeechTextBox.Location = new System.Drawing.Point(3, 38);
+            this.SpeechTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SpeechTextBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SpeechTextBox.ForeColor = System.Drawing.Color.White;
+            this.SpeechTextBox.Location = new System.Drawing.Point(0, 38);
             this.SpeechTextBox.Multiline = true;
             this.SpeechTextBox.Name = "SpeechTextBox";
-            this.SpeechTextBox.Size = new System.Drawing.Size(634, 228);
+            this.SpeechTextBox.Size = new System.Drawing.Size(640, 228);
             this.SpeechTextBox.TabIndex = 14;
+            this.SpeechTextBox.Text = "...";
             this.SpeechTextBox.WordWrap = false;
             // 
             // SpeedSlider
             // 
+            this.SpeedSlider.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.SpeedSlider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(4)))), ((int)(((byte)(59)))));
-            this.SpeedSlider.Location = new System.Drawing.Point(175, 307);
+            this.SpeedSlider.Location = new System.Drawing.Point(79, 357);
             this.SpeedSlider.Minimum = -10;
             this.SpeedSlider.Name = "SpeedSlider";
             this.SpeedSlider.Size = new System.Drawing.Size(106, 45);
@@ -172,8 +183,9 @@
             // 
             // VolumeSlider
             // 
+            this.VolumeSlider.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.VolumeSlider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(4)))), ((int)(((byte)(59)))));
-            this.VolumeSlider.Location = new System.Drawing.Point(175, 358);
+            this.VolumeSlider.Location = new System.Drawing.Point(79, 408);
             this.VolumeSlider.Maximum = 100;
             this.VolumeSlider.Name = "VolumeSlider";
             this.VolumeSlider.Size = new System.Drawing.Size(106, 45);
@@ -182,12 +194,13 @@
             // 
             // Clear
             // 
+            this.Clear.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Clear.BackColor = System.Drawing.Color.LightGray;
             this.Clear.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Clear.ForeColor = System.Drawing.Color.Black;
-            this.Clear.Location = new System.Drawing.Point(499, 389);
+            this.Clear.Location = new System.Drawing.Point(510, 414);
             this.Clear.Name = "Clear";
-            this.Clear.Size = new System.Drawing.Size(99, 41);
+            this.Clear.Size = new System.Drawing.Size(121, 41);
             this.Clear.TabIndex = 17;
             this.Clear.Text = "Clear";
             this.Clear.UseVisualStyleBackColor = false;

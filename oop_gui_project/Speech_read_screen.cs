@@ -71,6 +71,7 @@ namespace DesignTest
 
         private void Clear_Click(object sender, EventArgs e)
         {
+            SpeechTextBox.Text = " ";
             SpeedSlider.Value = 0;
             VolumeSlider.Value = 50;
         }

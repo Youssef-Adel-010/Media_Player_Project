@@ -85,12 +85,12 @@
             this.bunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(29, 101);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(30, 104);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(405, 87);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(401, 116);
             this.bunifuCustomLabel1.TabIndex = 1;
-            this.bunifuCustomLabel1.Text = "A Professional Media Player \r\nYouTupe Video And Audio Downloader.\r\nWe Hope You En" +
-    "joy Your Journey :)\r\n";
+            this.bunifuCustomLabel1.Text = "Professional Media Player\r\nYouTube Video And Audio Downloader\r\nSpeech Synthesizer" +
+    "\r\nWe Hope You Enjoy Your Journey ;)\r\n";
             // 
             // bunifuCustomLabel2
             // 

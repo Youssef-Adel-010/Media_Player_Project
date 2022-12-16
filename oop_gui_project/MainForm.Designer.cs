@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.LeftSidePanel = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.SpeechBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Home = new Bunifu.Framework.UI.BunifuFlatButton();
             this.AboutUsbtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.FavouritsBtn = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -57,7 +58,6 @@
             this.LeftCounterLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.SongProgressBar = new Bunifu.Framework.UI.BunifuProgressBar();
             this.Container = new System.Windows.Forms.Panel();
-            this.SpeechBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.base_screen1 = new DesignTest.Base_screen();
             this.LeftSidePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).BeginInit();
@@ -103,8 +103,47 @@
             this.LeftSidePanel.Location = new System.Drawing.Point(0, 0);
             this.LeftSidePanel.Name = "LeftSidePanel";
             this.LeftSidePanel.Quality = 10;
-            this.LeftSidePanel.Size = new System.Drawing.Size(177, 550);
+            this.LeftSidePanel.Size = new System.Drawing.Size(180, 550);
             this.LeftSidePanel.TabIndex = 0;
+            // 
+            // SpeechBtn
+            // 
+            this.SpeechBtn.Activecolor = System.Drawing.Color.Magenta;
+            this.SpeechBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.SpeechBtn.BackColor = System.Drawing.Color.Transparent;
+            this.SpeechBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.SpeechBtn.BorderRadius = 0;
+            this.SpeechBtn.ButtonText = "Speech Reader";
+            this.SpeechBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SpeechBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.SpeechBtn.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SpeechBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.SpeechBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("SpeechBtn.Iconimage")));
+            this.SpeechBtn.Iconimage_right = null;
+            this.SpeechBtn.Iconimage_right_Selected = null;
+            this.SpeechBtn.Iconimage_Selected = null;
+            this.SpeechBtn.IconMarginLeft = 0;
+            this.SpeechBtn.IconMarginRight = 0;
+            this.SpeechBtn.IconRightVisible = true;
+            this.SpeechBtn.IconRightZoom = 0D;
+            this.SpeechBtn.IconVisible = true;
+            this.SpeechBtn.IconZoom = 48D;
+            this.SpeechBtn.IsTab = false;
+            this.SpeechBtn.Location = new System.Drawing.Point(-2, 442);
+            this.SpeechBtn.Margin = new System.Windows.Forms.Padding(20);
+            this.SpeechBtn.Name = "SpeechBtn";
+            this.SpeechBtn.Normalcolor = System.Drawing.Color.Transparent;
+            this.SpeechBtn.OnHovercolor = System.Drawing.Color.DarkMagenta;
+            this.SpeechBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.SpeechBtn.Padding = new System.Windows.Forms.Padding(20);
+            this.SpeechBtn.selected = false;
+            this.SpeechBtn.Size = new System.Drawing.Size(177, 50);
+            this.SpeechBtn.TabIndex = 12;
+            this.SpeechBtn.Text = "Speech Reader";
+            this.SpeechBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SpeechBtn.Textcolor = System.Drawing.Color.White;
+            this.SpeechBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SpeechBtn.Click += new System.EventHandler(this.SpeechBtn_Click);
             // 
             // Home
             // 
@@ -116,6 +155,7 @@
             this.Home.ButtonText = "Home";
             this.Home.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Home.DisabledColor = System.Drawing.Color.Gray;
+            this.Home.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Home.Iconcolor = System.Drawing.Color.Transparent;
             this.Home.Iconimage = ((System.Drawing.Image)(resources.GetObject("Home.Iconimage")));
             this.Home.Iconimage_right = null;
@@ -154,6 +194,7 @@
             this.AboutUsbtn.ButtonText = "About Us";
             this.AboutUsbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AboutUsbtn.DisabledColor = System.Drawing.Color.Gray;
+            this.AboutUsbtn.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AboutUsbtn.Iconcolor = System.Drawing.Color.Transparent;
             this.AboutUsbtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("AboutUsbtn.Iconimage")));
             this.AboutUsbtn.Iconimage_right = null;
@@ -192,6 +233,7 @@
             this.FavouritsBtn.ButtonText = "Add To Favourits";
             this.FavouritsBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FavouritsBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.FavouritsBtn.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FavouritsBtn.Iconcolor = System.Drawing.Color.Transparent;
             this.FavouritsBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("FavouritsBtn.Iconimage")));
             this.FavouritsBtn.Iconimage_right = null;
@@ -243,7 +285,7 @@
             this.DownloadBtn.ButtonText = "Youtube Download";
             this.DownloadBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DownloadBtn.DisabledColor = System.Drawing.Color.Gray;
-            this.DownloadBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DownloadBtn.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DownloadBtn.Iconcolor = System.Drawing.Color.Transparent;
             this.DownloadBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("DownloadBtn.Iconimage")));
             this.DownloadBtn.Iconimage_right = null;
@@ -310,6 +352,7 @@
             this.BrouseBtn.ButtonText = "Browse";
             this.BrouseBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BrouseBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.BrouseBtn.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BrouseBtn.Iconcolor = System.Drawing.Color.Transparent;
             this.BrouseBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("BrouseBtn.Iconimage")));
             this.BrouseBtn.Iconimage_right = null;
@@ -347,6 +390,7 @@
             this.nowplayingbtn.ButtonText = "Playing Now";
             this.nowplayingbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.nowplayingbtn.DisabledColor = System.Drawing.Color.Gray;
+            this.nowplayingbtn.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nowplayingbtn.Iconcolor = System.Drawing.Color.Transparent;
             this.nowplayingbtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("nowplayingbtn.Iconimage")));
             this.nowplayingbtn.Iconimage_right = null;
@@ -385,6 +429,7 @@
             this.PlayListBtn.ButtonText = "Playlist";
             this.PlayListBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PlayListBtn.DisabledColor = System.Drawing.SystemColors.GrayText;
+            this.PlayListBtn.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PlayListBtn.Iconcolor = System.Drawing.Color.Transparent;
             this.PlayListBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("PlayListBtn.Iconimage")));
             this.PlayListBtn.Iconimage_right = null;
@@ -448,10 +493,10 @@
             this.ControlPanel.GradientBottomRight = System.Drawing.Color.DarkOrchid;
             this.ControlPanel.GradientTopLeft = System.Drawing.Color.MediumBlue;
             this.ControlPanel.GradientTopRight = System.Drawing.Color.RoyalBlue;
-            this.ControlPanel.Location = new System.Drawing.Point(177, 483);
+            this.ControlPanel.Location = new System.Drawing.Point(180, 483);
             this.ControlPanel.Name = "ControlPanel";
             this.ControlPanel.Quality = 10;
-            this.ControlPanel.Size = new System.Drawing.Size(643, 67);
+            this.ControlPanel.Size = new System.Drawing.Size(640, 67);
             this.ControlPanel.TabIndex = 1;
             // 
             // NextBtn
@@ -461,7 +506,7 @@
             this.NextBtn.BackColor = System.Drawing.Color.Transparent;
             this.NextBtn.Image = ((System.Drawing.Image)(resources.GetObject("NextBtn.Image")));
             this.NextBtn.ImageActive = null;
-            this.NextBtn.Location = new System.Drawing.Point(366, 19);
+            this.NextBtn.Location = new System.Drawing.Point(363, 19);
             this.NextBtn.Name = "NextBtn";
             this.NextBtn.Size = new System.Drawing.Size(32, 33);
             this.NextBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -476,7 +521,7 @@
             this.PreviousBtn.BackColor = System.Drawing.Color.Transparent;
             this.PreviousBtn.Image = ((System.Drawing.Image)(resources.GetObject("PreviousBtn.Image")));
             this.PreviousBtn.ImageActive = null;
-            this.PreviousBtn.Location = new System.Drawing.Point(230, 19);
+            this.PreviousBtn.Location = new System.Drawing.Point(227, 19);
             this.PreviousBtn.Name = "PreviousBtn";
             this.PreviousBtn.Size = new System.Drawing.Size(32, 33);
             this.PreviousBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -491,7 +536,7 @@
             this.PlayPtn.BackColor = System.Drawing.Color.Transparent;
             this.PlayPtn.Image = ((System.Drawing.Image)(resources.GetObject("PlayPtn.Image")));
             this.PlayPtn.ImageActive = null;
-            this.PlayPtn.Location = new System.Drawing.Point(264, 19);
+            this.PlayPtn.Location = new System.Drawing.Point(261, 19);
             this.PlayPtn.Name = "PlayPtn";
             this.PlayPtn.Size = new System.Drawing.Size(32, 33);
             this.PlayPtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -506,7 +551,7 @@
             this.StopBtn.BackColor = System.Drawing.Color.Transparent;
             this.StopBtn.Image = ((System.Drawing.Image)(resources.GetObject("StopBtn.Image")));
             this.StopBtn.ImageActive = null;
-            this.StopBtn.Location = new System.Drawing.Point(332, 19);
+            this.StopBtn.Location = new System.Drawing.Point(329, 19);
             this.StopBtn.Name = "StopBtn";
             this.StopBtn.Size = new System.Drawing.Size(32, 33);
             this.StopBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -520,7 +565,7 @@
             this.bunifuImageButton5.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton5.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton5.Image")));
             this.bunifuImageButton5.ImageActive = null;
-            this.bunifuImageButton5.Location = new System.Drawing.Point(497, 33);
+            this.bunifuImageButton5.Location = new System.Drawing.Point(494, 33);
             this.bunifuImageButton5.Name = "bunifuImageButton5";
             this.bunifuImageButton5.Size = new System.Drawing.Size(28, 22);
             this.bunifuImageButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -535,7 +580,7 @@
             this.PauseBtn.BackColor = System.Drawing.Color.Transparent;
             this.PauseBtn.Image = ((System.Drawing.Image)(resources.GetObject("PauseBtn.Image")));
             this.PauseBtn.ImageActive = null;
-            this.PauseBtn.Location = new System.Drawing.Point(298, 19);
+            this.PauseBtn.Location = new System.Drawing.Point(295, 19);
             this.PauseBtn.Name = "PauseBtn";
             this.PauseBtn.Size = new System.Drawing.Size(32, 33);
             this.PauseBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -548,7 +593,7 @@
             this.VoiceRateLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.VoiceRateLabel.AutoSize = true;
             this.VoiceRateLabel.BackColor = System.Drawing.Color.Transparent;
-            this.VoiceRateLabel.Location = new System.Drawing.Point(613, 37);
+            this.VoiceRateLabel.Location = new System.Drawing.Point(610, 37);
             this.VoiceRateLabel.Name = "VoiceRateLabel";
             this.VoiceRateLabel.Size = new System.Drawing.Size(25, 26);
             this.VoiceRateLabel.TabIndex = 12;
@@ -562,7 +607,7 @@
             this.VoiceSlider.BackgroudColor = System.Drawing.Color.DarkGray;
             this.VoiceSlider.BorderRadius = 0;
             this.VoiceSlider.IndicatorColor = System.Drawing.Color.MediumOrchid;
-            this.VoiceSlider.Location = new System.Drawing.Point(530, 32);
+            this.VoiceSlider.Location = new System.Drawing.Point(527, 32);
             this.VoiceSlider.MaximumValue = 100;
             this.VoiceSlider.Name = "VoiceSlider";
             this.VoiceSlider.Size = new System.Drawing.Size(82, 30);
@@ -586,7 +631,7 @@
             this.RightCounterLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.RightCounterLabel.AutoSize = true;
             this.RightCounterLabel.BackColor = System.Drawing.Color.Transparent;
-            this.RightCounterLabel.Location = new System.Drawing.Point(606, 14);
+            this.RightCounterLabel.Location = new System.Drawing.Point(603, 14);
             this.RightCounterLabel.Name = "RightCounterLabel";
             this.RightCounterLabel.Size = new System.Drawing.Size(34, 13);
             this.RightCounterLabel.TabIndex = 10;
@@ -614,7 +659,7 @@
             this.SongProgressBar.MaximumValue = 100;
             this.SongProgressBar.Name = "SongProgressBar";
             this.SongProgressBar.ProgressColor = System.Drawing.Color.Teal;
-            this.SongProgressBar.Size = new System.Drawing.Size(631, 10);
+            this.SongProgressBar.Size = new System.Drawing.Size(628, 10);
             this.SongProgressBar.TabIndex = 0;
             this.SongProgressBar.Value = 0;
             // 
@@ -622,55 +667,17 @@
             // 
             this.Container.Controls.Add(this.base_screen1);
             this.Container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Container.Location = new System.Drawing.Point(177, 0);
+            this.Container.Location = new System.Drawing.Point(180, 0);
             this.Container.Name = "Container";
-            this.Container.Size = new System.Drawing.Size(643, 483);
+            this.Container.Size = new System.Drawing.Size(640, 483);
             this.Container.TabIndex = 2;
-            // 
-            // SpeechBtn
-            // 
-            this.SpeechBtn.Activecolor = System.Drawing.Color.Magenta;
-            this.SpeechBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.SpeechBtn.BackColor = System.Drawing.Color.Transparent;
-            this.SpeechBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.SpeechBtn.BorderRadius = 0;
-            this.SpeechBtn.ButtonText = "Speech Reader";
-            this.SpeechBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SpeechBtn.DisabledColor = System.Drawing.Color.Gray;
-            this.SpeechBtn.Iconcolor = System.Drawing.Color.Transparent;
-            this.SpeechBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("SpeechBtn.Iconimage")));
-            this.SpeechBtn.Iconimage_right = null;
-            this.SpeechBtn.Iconimage_right_Selected = null;
-            this.SpeechBtn.Iconimage_Selected = null;
-            this.SpeechBtn.IconMarginLeft = 0;
-            this.SpeechBtn.IconMarginRight = 0;
-            this.SpeechBtn.IconRightVisible = true;
-            this.SpeechBtn.IconRightZoom = 0D;
-            this.SpeechBtn.IconVisible = true;
-            this.SpeechBtn.IconZoom = 48D;
-            this.SpeechBtn.IsTab = false;
-            this.SpeechBtn.Location = new System.Drawing.Point(-2, 442);
-            this.SpeechBtn.Margin = new System.Windows.Forms.Padding(20);
-            this.SpeechBtn.Name = "SpeechBtn";
-            this.SpeechBtn.Normalcolor = System.Drawing.Color.Transparent;
-            this.SpeechBtn.OnHovercolor = System.Drawing.Color.DarkMagenta;
-            this.SpeechBtn.OnHoverTextColor = System.Drawing.Color.White;
-            this.SpeechBtn.Padding = new System.Windows.Forms.Padding(20);
-            this.SpeechBtn.selected = false;
-            this.SpeechBtn.Size = new System.Drawing.Size(177, 50);
-            this.SpeechBtn.TabIndex = 12;
-            this.SpeechBtn.Text = "Speech Reader";
-            this.SpeechBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.SpeechBtn.Textcolor = System.Drawing.Color.White;
-            this.SpeechBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SpeechBtn.Click += new System.EventHandler(this.SpeechBtn_Click);
             // 
             // base_screen1
             // 
             this.base_screen1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.base_screen1.Location = new System.Drawing.Point(0, 0);
             this.base_screen1.Name = "base_screen1";
-            this.base_screen1.Size = new System.Drawing.Size(643, 483);
+            this.base_screen1.Size = new System.Drawing.Size(640, 483);
             this.base_screen1.TabIndex = 0;
             // 
             // MainForm
