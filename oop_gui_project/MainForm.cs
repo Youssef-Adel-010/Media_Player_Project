@@ -56,8 +56,7 @@ namespace oop_gui_project
 
         private void PlayListBtn_Click(object sender, EventArgs e)
         {
-            PlayList_screen playlist_scr = new PlayList_screen();
-            AddUserControl(playlist_scr);
+            Playlist_List.BringToFront();
         }
         private void NowPlayingBtn_Click(object sender, EventArgs e)
         {

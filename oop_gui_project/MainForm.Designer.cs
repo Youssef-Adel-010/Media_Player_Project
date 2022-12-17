@@ -57,6 +57,7 @@
             this.RightCounterLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.LeftCounterLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.SongProgressBar = new Bunifu.Framework.UI.BunifuProgressBar();
+            this.Playlist_List = new System.Windows.Forms.ListBox();
             this.Container = new System.Windows.Forms.Panel();
             this.base_screen1 = new DesignTest.Base_screen();
             this.LeftSidePanel.SuspendLayout();
@@ -660,6 +661,20 @@
             this.SongProgressBar.TabIndex = 0;
             this.SongProgressBar.Value = 0;
             // 
+            // Playlist_List
+            // 
+            this.Playlist_List.BackColor = System.Drawing.Color.Black;
+            this.Playlist_List.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Playlist_List.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Playlist_List.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Playlist_List.ForeColor = System.Drawing.Color.White;
+            this.Playlist_List.FormattingEnabled = true;
+            this.Playlist_List.ItemHeight = 19;
+            this.Playlist_List.Location = new System.Drawing.Point(180, 0);
+            this.Playlist_List.Name = "Playlist_List";
+            this.Playlist_List.Size = new System.Drawing.Size(640, 483);
+            this.Playlist_List.TabIndex = 3;
+            // 
             // Container
             // 
             this.Container.Controls.Add(this.base_screen1);
@@ -667,7 +682,7 @@
             this.Container.Location = new System.Drawing.Point(180, 0);
             this.Container.Name = "Container";
             this.Container.Size = new System.Drawing.Size(640, 483);
-            this.Container.TabIndex = 2;
+            this.Container.TabIndex = 24;
             // 
             // base_screen1
             // 
@@ -675,7 +690,7 @@
             this.base_screen1.Location = new System.Drawing.Point(0, 0);
             this.base_screen1.Name = "base_screen1";
             this.base_screen1.Size = new System.Drawing.Size(640, 483);
-            this.base_screen1.TabIndex = 0;
+            this.base_screen1.TabIndex = 18;
             // 
             // MainForm
             // 
@@ -683,6 +698,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(820, 550);
             this.Controls.Add(this.Container);
+            this.Controls.Add(this.Playlist_List);
             this.Controls.Add(this.ControlPanel);
             this.Controls.Add(this.LeftSidePanel);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -735,10 +751,11 @@
         private Bunifu.Framework.UI.BunifuImageButton NextBtn;
         private Bunifu.Framework.UI.BunifuImageButton PreviousBtn;
         private Bunifu.Framework.UI.BunifuFlatButton Home;
-        private System.Windows.Forms.Panel Container;
-        private DesignTest.Base_screen base_screen1;
         private Bunifu.Framework.UI.BunifuFlatButton SpeechBtn;
         private Bunifu.Framework.UI.BunifuFlatButton AboutUsbtn;
+        private System.Windows.Forms.Panel Container;
+        private DesignTest.Base_screen base_screen1;
+        public System.Windows.Forms.ListBox Playlist_List;
     }
 }
 

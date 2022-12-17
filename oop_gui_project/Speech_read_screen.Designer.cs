@@ -169,7 +169,6 @@
             this.SpeechTextBox.Size = new System.Drawing.Size(640, 228);
             this.SpeechTextBox.TabIndex = 14;
             this.SpeechTextBox.Text = "...";
-            this.SpeechTextBox.WordWrap = false;
             // 
             // SpeedSlider
             // 
