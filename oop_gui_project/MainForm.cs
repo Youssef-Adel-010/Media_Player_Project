@@ -53,7 +53,15 @@ namespace oop_gui_project
         {
             player.PlayFile(playlist[idx]);
             AddUserControl(player);
-            SongNameLabel.Text = playlist[idx].name();
+            string songName = playlist[idx].name();
+            for (int i = songName.Length - 1; i >= 0; i--)
+            {
+                // Remove file types (.mp4, .mov, etc..).
+                if (songName[i] != '.') continue;
+                songName = songName.Substring(0, i);
+                break;
+            }
+            SongNameLabel.Text = songName;
         }
         private void PlaylistBox_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -68,8 +76,8 @@ namespace oop_gui_project
 
         private void AddUserControl(UserControl user)
         {
-            /// This base function adds user controls, and displays the screen at the top.
-
+            // This base function adds user controls, and displays the screen at the top.
+            
             user.Dock = DockStyle.Fill;
             Container.Controls.Clear();
             Container.Controls.Add(user);
@@ -113,6 +121,8 @@ namespace oop_gui_project
         }
         private void BrowseBtn_Click(object sender, EventArgs e)
         {
+            // add new media to playlist and plays the first one.
+
             start_index = playlist.Count;
             OpenFileDialog OpenFile = new OpenFileDialog();
             OpenFile.Title = "Select Media";
