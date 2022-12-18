@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.Ellipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.WelcomeScreen = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.LeftSidePanel = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.SpeechBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Home = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -76,10 +76,10 @@
             this.Container.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Ellipse
+            // WelcomeScreen
             // 
-            this.Ellipse.ElipseRadius = 5;
-            this.Ellipse.TargetControl = this;
+            this.WelcomeScreen.ElipseRadius = 5;
+            this.WelcomeScreen.TargetControl = this;
             // 
             // LeftSidePanel
             // 
@@ -98,10 +98,10 @@
             this.LeftSidePanel.Controls.Add(this.PlayListBtn);
             this.LeftSidePanel.Controls.Add(this.LogoBtn);
             this.LeftSidePanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.LeftSidePanel.GradientBottomLeft = System.Drawing.Color.Red;
-            this.LeftSidePanel.GradientBottomRight = System.Drawing.Color.Purple;
-            this.LeftSidePanel.GradientTopLeft = System.Drawing.Color.RoyalBlue;
-            this.LeftSidePanel.GradientTopRight = System.Drawing.Color.Blue;
+            this.LeftSidePanel.GradientBottomLeft = System.Drawing.Color.Black;
+            this.LeftSidePanel.GradientBottomRight = System.Drawing.Color.DeepSkyBlue;
+            this.LeftSidePanel.GradientTopLeft = System.Drawing.Color.DeepSkyBlue;
+            this.LeftSidePanel.GradientTopRight = System.Drawing.Color.DarkViolet;
             this.LeftSidePanel.Location = new System.Drawing.Point(0, 0);
             this.LeftSidePanel.Name = "LeftSidePanel";
             this.LeftSidePanel.Quality = 10;
@@ -110,7 +110,7 @@
             // 
             // SpeechBtn
             // 
-            this.SpeechBtn.Activecolor = System.Drawing.Color.Magenta;
+            this.SpeechBtn.Activecolor = System.Drawing.Color.RoyalBlue;
             this.SpeechBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.SpeechBtn.BackColor = System.Drawing.Color.Transparent;
             this.SpeechBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -135,7 +135,7 @@
             this.SpeechBtn.Margin = new System.Windows.Forms.Padding(20);
             this.SpeechBtn.Name = "SpeechBtn";
             this.SpeechBtn.Normalcolor = System.Drawing.Color.Transparent;
-            this.SpeechBtn.OnHovercolor = System.Drawing.Color.DarkMagenta;
+            this.SpeechBtn.OnHovercolor = System.Drawing.Color.RoyalBlue;
             this.SpeechBtn.OnHoverTextColor = System.Drawing.Color.White;
             this.SpeechBtn.Padding = new System.Windows.Forms.Padding(20);
             this.SpeechBtn.selected = false;
@@ -149,7 +149,7 @@
             // 
             // Home
             // 
-            this.Home.Activecolor = System.Drawing.Color.Magenta;
+            this.Home.Activecolor = System.Drawing.Color.RoyalBlue;
             this.Home.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Home.BackColor = System.Drawing.Color.Transparent;
             this.Home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -174,7 +174,7 @@
             this.Home.Margin = new System.Windows.Forms.Padding(20);
             this.Home.Name = "Home";
             this.Home.Normalcolor = System.Drawing.Color.Transparent;
-            this.Home.OnHovercolor = System.Drawing.Color.DarkMagenta;
+            this.Home.OnHovercolor = System.Drawing.Color.RoyalBlue;
             this.Home.OnHoverTextColor = System.Drawing.Color.White;
             this.Home.Padding = new System.Windows.Forms.Padding(20);
             this.Home.selected = false;
@@ -188,7 +188,7 @@
             // 
             // AboutUsbtn
             // 
-            this.AboutUsbtn.Activecolor = System.Drawing.Color.Magenta;
+            this.AboutUsbtn.Activecolor = System.Drawing.Color.RoyalBlue;
             this.AboutUsbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.AboutUsbtn.BackColor = System.Drawing.Color.Transparent;
             this.AboutUsbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -213,7 +213,7 @@
             this.AboutUsbtn.Margin = new System.Windows.Forms.Padding(20);
             this.AboutUsbtn.Name = "AboutUsbtn";
             this.AboutUsbtn.Normalcolor = System.Drawing.Color.Transparent;
-            this.AboutUsbtn.OnHovercolor = System.Drawing.Color.DarkMagenta;
+            this.AboutUsbtn.OnHovercolor = System.Drawing.Color.RoyalBlue;
             this.AboutUsbtn.OnHoverTextColor = System.Drawing.Color.White;
             this.AboutUsbtn.Padding = new System.Windows.Forms.Padding(20);
             this.AboutUsbtn.selected = false;
@@ -227,7 +227,7 @@
             // 
             // FavoritesBtn
             // 
-            this.FavoritesBtn.Activecolor = System.Drawing.Color.Magenta;
+            this.FavoritesBtn.Activecolor = System.Drawing.Color.RoyalBlue;
             this.FavoritesBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.FavoritesBtn.BackColor = System.Drawing.Color.Transparent;
             this.FavoritesBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -252,7 +252,7 @@
             this.FavoritesBtn.Margin = new System.Windows.Forms.Padding(20);
             this.FavoritesBtn.Name = "FavoritesBtn";
             this.FavoritesBtn.Normalcolor = System.Drawing.Color.Transparent;
-            this.FavoritesBtn.OnHovercolor = System.Drawing.Color.DarkMagenta;
+            this.FavoritesBtn.OnHovercolor = System.Drawing.Color.RoyalBlue;
             this.FavoritesBtn.OnHoverTextColor = System.Drawing.Color.White;
             this.FavoritesBtn.Padding = new System.Windows.Forms.Padding(20);
             this.FavoritesBtn.selected = false;
@@ -279,7 +279,7 @@
             // 
             // DownloadBtn
             // 
-            this.DownloadBtn.Activecolor = System.Drawing.Color.Magenta;
+            this.DownloadBtn.Activecolor = System.Drawing.Color.RoyalBlue;
             this.DownloadBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.DownloadBtn.BackColor = System.Drawing.Color.Transparent;
             this.DownloadBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -304,7 +304,7 @@
             this.DownloadBtn.Margin = new System.Windows.Forms.Padding(20);
             this.DownloadBtn.Name = "DownloadBtn";
             this.DownloadBtn.Normalcolor = System.Drawing.Color.Transparent;
-            this.DownloadBtn.OnHovercolor = System.Drawing.Color.DarkMagenta;
+            this.DownloadBtn.OnHovercolor = System.Drawing.Color.RoyalBlue;
             this.DownloadBtn.OnHoverTextColor = System.Drawing.Color.White;
             this.DownloadBtn.Padding = new System.Windows.Forms.Padding(20);
             this.DownloadBtn.selected = false;
@@ -346,7 +346,7 @@
             // 
             // BrowseBtn
             // 
-            this.BrowseBtn.Activecolor = System.Drawing.Color.Magenta;
+            this.BrowseBtn.Activecolor = System.Drawing.Color.RoyalBlue;
             this.BrowseBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.BrowseBtn.BackColor = System.Drawing.Color.Transparent;
             this.BrowseBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -371,7 +371,7 @@
             this.BrowseBtn.Margin = new System.Windows.Forms.Padding(20);
             this.BrowseBtn.Name = "BrowseBtn";
             this.BrowseBtn.Normalcolor = System.Drawing.Color.Transparent;
-            this.BrowseBtn.OnHovercolor = System.Drawing.Color.DarkMagenta;
+            this.BrowseBtn.OnHovercolor = System.Drawing.Color.RoyalBlue;
             this.BrowseBtn.OnHoverTextColor = System.Drawing.Color.White;
             this.BrowseBtn.Padding = new System.Windows.Forms.Padding(20);
             this.BrowseBtn.selected = false;
@@ -385,7 +385,7 @@
             // 
             // NowPlayingBtn
             // 
-            this.NowPlayingBtn.Activecolor = System.Drawing.Color.Magenta;
+            this.NowPlayingBtn.Activecolor = System.Drawing.Color.RoyalBlue;
             this.NowPlayingBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.NowPlayingBtn.BackColor = System.Drawing.Color.Transparent;
             this.NowPlayingBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -410,7 +410,7 @@
             this.NowPlayingBtn.Margin = new System.Windows.Forms.Padding(20);
             this.NowPlayingBtn.Name = "NowPlayingBtn";
             this.NowPlayingBtn.Normalcolor = System.Drawing.Color.Transparent;
-            this.NowPlayingBtn.OnHovercolor = System.Drawing.Color.DarkMagenta;
+            this.NowPlayingBtn.OnHovercolor = System.Drawing.Color.RoyalBlue;
             this.NowPlayingBtn.OnHoverTextColor = System.Drawing.Color.White;
             this.NowPlayingBtn.Padding = new System.Windows.Forms.Padding(20);
             this.NowPlayingBtn.selected = false;
@@ -424,7 +424,7 @@
             // 
             // PlayListBtn
             // 
-            this.PlayListBtn.Activecolor = System.Drawing.Color.Magenta;
+            this.PlayListBtn.Activecolor = System.Drawing.Color.RoyalBlue;
             this.PlayListBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.PlayListBtn.BackColor = System.Drawing.Color.Transparent;
             this.PlayListBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -449,7 +449,7 @@
             this.PlayListBtn.Margin = new System.Windows.Forms.Padding(20);
             this.PlayListBtn.Name = "PlayListBtn";
             this.PlayListBtn.Normalcolor = System.Drawing.Color.Transparent;
-            this.PlayListBtn.OnHovercolor = System.Drawing.Color.DarkMagenta;
+            this.PlayListBtn.OnHovercolor = System.Drawing.Color.RoyalBlue;
             this.PlayListBtn.OnHoverTextColor = System.Drawing.Color.White;
             this.PlayListBtn.Padding = new System.Windows.Forms.Padding(20);
             this.PlayListBtn.selected = false;
@@ -493,10 +493,10 @@
             this.ControlPanel.Controls.Add(this.LeftCounterLabel);
             this.ControlPanel.Controls.Add(this.SongProgressBar);
             this.ControlPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ControlPanel.GradientBottomLeft = System.Drawing.Color.Red;
-            this.ControlPanel.GradientBottomRight = System.Drawing.Color.DarkOrchid;
-            this.ControlPanel.GradientTopLeft = System.Drawing.Color.MediumBlue;
-            this.ControlPanel.GradientTopRight = System.Drawing.Color.RoyalBlue;
+            this.ControlPanel.GradientBottomLeft = System.Drawing.Color.Black;
+            this.ControlPanel.GradientBottomRight = System.Drawing.Color.Blue;
+            this.ControlPanel.GradientTopLeft = System.Drawing.Color.Cyan;
+            this.ControlPanel.GradientTopRight = System.Drawing.Color.DarkViolet;
             this.ControlPanel.Location = new System.Drawing.Point(180, 483);
             this.ControlPanel.Name = "ControlPanel";
             this.ControlPanel.Quality = 10;
@@ -605,7 +605,7 @@
             this.AudioSlider.BackColor = System.Drawing.Color.Transparent;
             this.AudioSlider.BackgroudColor = System.Drawing.Color.DarkGray;
             this.AudioSlider.BorderRadius = 0;
-            this.AudioSlider.IndicatorColor = System.Drawing.Color.MediumOrchid;
+            this.AudioSlider.IndicatorColor = System.Drawing.Color.RoyalBlue;
             this.AudioSlider.Location = new System.Drawing.Point(527, 30);
             this.AudioSlider.MaximumValue = 100;
             this.AudioSlider.Name = "AudioSlider";
@@ -664,7 +664,7 @@
             // 
             // Container
             // 
-            this.Container.BackColor = System.Drawing.Color.DarkMagenta;
+            this.Container.BackColor = System.Drawing.Color.DarkBlue;
             this.Container.Controls.Add(this.base_screen1);
             this.Container.Controls.Add(this.PlaylistBox);
             this.Container.Controls.Add(this.PlayBtn);
@@ -676,27 +676,28 @@
             // 
             // PlaylistBox
             // 
-            this.PlaylistBox.BackColor = System.Drawing.Color.Purple;
+            this.PlaylistBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.PlaylistBox.BackColor = System.Drawing.Color.Navy;
             this.PlaylistBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PlaylistBox.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PlaylistBox.ForeColor = System.Drawing.SystemColors.Menu;
             this.PlaylistBox.FormattingEnabled = true;
             this.PlaylistBox.ItemHeight = 26;
-            this.PlaylistBox.Location = new System.Drawing.Point(30, 30);
+            this.PlaylistBox.Location = new System.Drawing.Point(8, 14);
             this.PlaylistBox.Name = "PlaylistBox";
-            this.PlaylistBox.Size = new System.Drawing.Size(580, 364);
+            this.PlaylistBox.Size = new System.Drawing.Size(620, 390);
             this.PlaylistBox.TabIndex = 19;
             this.PlaylistBox.SelectedIndexChanged += new System.EventHandler(this.PlaylistBox_SelectedIndexChanged);
             // 
             // PlayBtn
             // 
-            this.PlayBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PlayBtn.BackColor = System.Drawing.Color.Purple;
+            this.PlayBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.PlayBtn.BackColor = System.Drawing.Color.CornflowerBlue;
             this.PlayBtn.FlatAppearance.BorderSize = 0;
             this.PlayBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PlayBtn.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PlayBtn.ForeColor = System.Drawing.SystemColors.Menu;
-            this.PlayBtn.Location = new System.Drawing.Point(30, 415);
+            this.PlayBtn.Location = new System.Drawing.Point(30, 421);
             this.PlayBtn.Name = "PlayBtn";
             this.PlayBtn.Size = new System.Drawing.Size(150, 50);
             this.PlayBtn.TabIndex = 20;
@@ -710,7 +711,7 @@
             this.base_screen1.Location = new System.Drawing.Point(0, 0);
             this.base_screen1.Name = "base_screen1";
             this.base_screen1.Size = new System.Drawing.Size(640, 550);
-            this.base_screen1.TabIndex = 18;
+            this.base_screen1.TabIndex = 29;
             // 
             // MainForm
             // 
@@ -745,7 +746,7 @@
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuElipse Ellipse;
+        private Bunifu.Framework.UI.BunifuElipse WelcomeScreen;
         private Bunifu.Framework.UI.BunifuGradientPanel LeftSidePanel;
         private Bunifu.Framework.UI.BunifuImageButton LogoBtn;
         private Bunifu.Framework.UI.BunifuFlatButton FavoritesBtn;
@@ -773,9 +774,9 @@
         private Bunifu.Framework.UI.BunifuFlatButton SpeechBtn;
         private Bunifu.Framework.UI.BunifuFlatButton AboutUsbtn;
         private System.Windows.Forms.Panel Container;
-        private DesignTest.Base_screen base_screen1;
         private System.Windows.Forms.ListBox PlaylistBox;
         private System.Windows.Forms.Button PlayBtn;
+        private DesignTest.Base_screen base_screen1;
     }
 }
 

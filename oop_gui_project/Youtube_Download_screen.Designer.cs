@@ -59,10 +59,10 @@
             this.YoutubeDownloadPanel.Controls.Add(this.ProgBar);
             this.YoutubeDownloadPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.YoutubeDownloadPanel.ForeColor = System.Drawing.Color.Silver;
-            this.YoutubeDownloadPanel.GradientBottomLeft = System.Drawing.Color.MediumBlue;
-            this.YoutubeDownloadPanel.GradientBottomRight = System.Drawing.Color.DarkMagenta;
-            this.YoutubeDownloadPanel.GradientTopLeft = System.Drawing.Color.DarkRed;
-            this.YoutubeDownloadPanel.GradientTopRight = System.Drawing.Color.Crimson;
+            this.YoutubeDownloadPanel.GradientBottomLeft = System.Drawing.Color.Black;
+            this.YoutubeDownloadPanel.GradientBottomRight = System.Drawing.Color.Blue;
+            this.YoutubeDownloadPanel.GradientTopLeft = System.Drawing.Color.DarkViolet;
+            this.YoutubeDownloadPanel.GradientTopRight = System.Drawing.Color.Aqua;
             this.YoutubeDownloadPanel.Location = new System.Drawing.Point(0, 0);
             this.YoutubeDownloadPanel.Name = "YoutubeDownloadPanel";
             this.YoutubeDownloadPanel.Quality = 10;
@@ -220,12 +220,12 @@
             this.ProgBar.TabIndex = 4;
             this.ProgBar.Value = 0;
             // 
-            // Youtube_Download_screen
+            // Youtube_download_screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.YoutubeDownloadPanel);
-            this.Name = "Youtube_Download_screen";
+            this.Name = "Youtube_download_screen";
             this.Size = new System.Drawing.Size(640, 443);
             this.YoutubeDownloadPanel.ResumeLayout(false);
             this.YoutubeDownloadPanel.PerformLayout();

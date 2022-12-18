@@ -118,16 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bunifuGradientPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="YoutubeDownloadPanel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFpSURBVChTBcFdT9JRAMDhc87/vH+1rrqpG+eWc72YWTIV
-        NcFAVCJEQwiQISn5khZZmStrrVartbZaW+uiddNVH+PX84h+HOQ4DnMaR3gfx/kc03yLWX7GAr9jib/x
-        Lv9iA9ELQzwMl3kSxjgJk7wJN/kQ8nwJRb6HCr9CnT+hjWj6i2z6UR74FId+hqd+npd+ibe+zEdf5atv
-        8cN3EStuhHV3g5ab4r7LsOsWeOxKPHdrvHL3eOc6fHI9RN6OUbQTVOwsdZujbZfZthX2bY2+3eCF3eK1
-        3UOkTYqMmWbBZCmZRdbMHRqmSsc06ZlNDswOR+YQMaonSek5pnWeeV1kUa9S1nWquk1Tb9PV++zoPuJC
-        MsOl5BbXkiUmkjKzyTq5pMVy0mUl2aWWPGIjeYY4pzIMqAJDqsQVtcZ11WBKdZhTPfLqgNvqiFV1gjgj
-        c5yVRc7LCoOyxrBsc1VuMS73SMs+WXlMQZ7yH2ZG2D0WCOYzAAAAAElFTkSuQmCC
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACUSURBVChTDcpBaQQwEADAdbrQRyCwENhHIBCogRqogBo4
+        AzVQATVQA2fgOo/5TUS+v+KNwaRYNJvDJfJDZDApFs3mcIn8FBlMikWzOVwiv0QGk2LRbA6XyIfIYFIs
+        ms3hEvktMpgUi2ZzuET+iAwmxaLZHC6RvyKDSbFoNodL5J/IYFIsms3hEvkUGUyKRbM53OfrH2x21n8b
+        BF0CAAAAAElFTkSuQmCC
 </value>
   </data>
 </root>

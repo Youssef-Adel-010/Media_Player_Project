@@ -159,7 +159,7 @@
             // SpeechTextBox
             // 
             this.SpeechTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.SpeechTextBox.BackColor = System.Drawing.SystemColors.InfoText;
+            this.SpeechTextBox.BackColor = System.Drawing.Color.Black;
             this.SpeechTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.SpeechTextBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SpeechTextBox.ForeColor = System.Drawing.Color.White;
@@ -173,7 +173,7 @@
             // SpeedSlider
             // 
             this.SpeedSlider.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.SpeedSlider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(4)))), ((int)(((byte)(59)))));
+            this.SpeedSlider.BackColor = System.Drawing.Color.Navy;
             this.SpeedSlider.Location = new System.Drawing.Point(79, 357);
             this.SpeedSlider.Minimum = -10;
             this.SpeedSlider.Name = "SpeedSlider";
@@ -183,7 +183,7 @@
             // VolumeSlider
             // 
             this.VolumeSlider.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.VolumeSlider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(4)))), ((int)(((byte)(59)))));
+            this.VolumeSlider.BackColor = System.Drawing.Color.Navy;
             this.VolumeSlider.Location = new System.Drawing.Point(79, 408);
             this.VolumeSlider.Maximum = 100;
             this.VolumeSlider.Name = "VolumeSlider";
@@ -222,10 +222,10 @@
             this.SpeechReadingPanel.Controls.Add(this.bunifuCustomLabel1);
             this.SpeechReadingPanel.Controls.Add(this.SpeechLabel);
             this.SpeechReadingPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SpeechReadingPanel.GradientBottomLeft = System.Drawing.Color.MediumBlue;
-            this.SpeechReadingPanel.GradientBottomRight = System.Drawing.Color.DarkMagenta;
-            this.SpeechReadingPanel.GradientTopLeft = System.Drawing.Color.DarkRed;
-            this.SpeechReadingPanel.GradientTopRight = System.Drawing.Color.Crimson;
+            this.SpeechReadingPanel.GradientBottomLeft = System.Drawing.Color.Black;
+            this.SpeechReadingPanel.GradientBottomRight = System.Drawing.Color.Blue;
+            this.SpeechReadingPanel.GradientTopLeft = System.Drawing.Color.Aqua;
+            this.SpeechReadingPanel.GradientTopRight = System.Drawing.Color.DarkViolet;
             this.SpeechReadingPanel.Location = new System.Drawing.Point(0, 0);
             this.SpeechReadingPanel.Name = "SpeechReadingPanel";
             this.SpeechReadingPanel.Quality = 10;

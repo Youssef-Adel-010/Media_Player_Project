@@ -121,13 +121,12 @@
   <data name="YoutubeDownloadPanel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFNSURBVChTBcFrb5NQAIDhc4ED54f5YUlNtYqy0VChhUJL
-        y+jalYysS+c2nTrvGjWaaOIH/+Xr84h7IudAltxXFQ91TeCsOHI3xKYl9Tpyf8fM7hE9MeaBzHmsSkJd
-        MXRqEndFZjaUXsvC72jsDvFIPOOpHBOpnJEuGTsVhVtTmRXH3oa139LaDnEkhsRyRKpScp0xcwpqd86J
-        WbL1Gjp/zYXdIhJxSCaHlGrEQqc0TsapW3Bm5uy8JZd+w41dIwrxhEoecqyGrPWI1kk5dzP2puDam3Pr
-        L7mzDaIWA05kwFaFdDriwol57ia8MBNee1Pe+TM+2QXiVPQ5kwN2KuBSh9w4Ea/cmLcm4aM34as/5Yed
-        Ic5Fj73sc60G3OqAOyfkgxvxxcR89xJ++RP+2CniShzwUvZ4o/q81wM+OwHf3JCfJuK3F/PXT/hnJ/wH
-        Qdq7Mb29BBUAAAAASUVORK5CYII=
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEJSURBVChTFcpNK8NxAADg3ZzkphwcOblxc5GjfAFfQElJ
+        aNFakrwmby0k0ZK0aC1JXpO3FtKitSTRkqQk3+Dn+T/nJ9YW6wqtld2huaYnNNX3hobGvlDXMhBq2+Oh
+        umMoVHUmQkV/MohxcVBMiElxWBwRR8VxcVKcjuKoOCZOiFPijDgrzouLYkpcjuKcuCCmxCVxRVwV18QN
+        MS1uRnFNXBfT4qa4JW6LGXFXzIq5KGbEHTEr5sQ9cV88EI/EE/EsigfioXgsnorn4oV4Jd6IefEuipfi
+        tZgXb8V78UEsiE9iUSxFsSA+ikWxJD6LL+Kr+C6WxY8ovopvYln8ED/FL/Fb/BF/xb/wD9LXzTWcG3Tr
+        AAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="DownloadBut.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

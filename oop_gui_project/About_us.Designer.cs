@@ -29,30 +29,31 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(About_us_screen));
-            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.YoutubeDownloadPanel = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.SuspendLayout();
             // 
-            // bunifuGradientPanel1
+            // YoutubeDownloadPanel
             // 
-            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Crimson;
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.DarkBlue;
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.Purple;
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.Fuchsia;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
-            this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(640, 443);
-            this.bunifuGradientPanel1.TabIndex = 0;
+            this.YoutubeDownloadPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("YoutubeDownloadPanel.BackgroundImage")));
+            this.YoutubeDownloadPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.YoutubeDownloadPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.YoutubeDownloadPanel.ForeColor = System.Drawing.Color.Silver;
+            this.YoutubeDownloadPanel.GradientBottomLeft = System.Drawing.Color.Black;
+            this.YoutubeDownloadPanel.GradientBottomRight = System.Drawing.Color.Blue;
+            this.YoutubeDownloadPanel.GradientTopLeft = System.Drawing.Color.DeepSkyBlue;
+            this.YoutubeDownloadPanel.GradientTopRight = System.Drawing.Color.Aqua;
+            this.YoutubeDownloadPanel.Location = new System.Drawing.Point(0, 0);
+            this.YoutubeDownloadPanel.Name = "YoutubeDownloadPanel";
+            this.YoutubeDownloadPanel.Quality = 10;
+            this.YoutubeDownloadPanel.Size = new System.Drawing.Size(640, 443);
+            this.YoutubeDownloadPanel.TabIndex = 14;
             // 
-            // About_us
+            // About_us_screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.bunifuGradientPanel1);
-            this.Name = "About_us";
+            this.Controls.Add(this.YoutubeDownloadPanel);
+            this.Name = "About_us_screen";
             this.Size = new System.Drawing.Size(640, 443);
             this.ResumeLayout(false);
 
@@ -60,6 +61,6 @@
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
+        private Bunifu.Framework.UI.BunifuGradientPanel YoutubeDownloadPanel;
     }
 }
