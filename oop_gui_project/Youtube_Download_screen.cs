@@ -14,9 +14,9 @@ using System.Threading;
 
 namespace DesignTest
 {
-    public partial class Youtube_Download_screen : UserControl
+    public partial class Youtube_download_screen : UserControl
     {
-        public Youtube_Download_screen()
+        public Youtube_download_screen()
         {
             InitializeComponent();
             ResDropDown.SelectedIndex = 0;

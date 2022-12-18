@@ -95,11 +95,11 @@
     <Compile Include="Speech_read_screen.Designer.cs">
       <DependentUpon>Speech_read_screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Youtupe_Download_screen.cs">
+    <Compile Include="Youtube_Download_screen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Youtupe_Download_screen.Designer.cs">
-      <DependentUpon>Youtupe_Download_screen.cs</DependentUpon>
+    <Compile Include="Youtube_Download_screen.Designer.cs">
+      <DependentUpon>Youtube_Download_screen.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="About_us.resx">
       <DependentUpon>About_us.cs</DependentUpon>
@@ -125,8 +125,8 @@
     <EmbeddedResource Include="Speech_read_screen.resx">
       <DependentUpon>Speech_read_screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Youtupe_Download_screen.resx">
-      <DependentUpon>Youtupe_Download_screen.cs</DependentUpon>
+    <EmbeddedResource Include="Youtube_Download_screen.resx">
+      <DependentUpon>Youtube_Download_screen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

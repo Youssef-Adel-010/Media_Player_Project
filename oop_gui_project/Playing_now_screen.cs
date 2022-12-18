@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace DesignTest
 {
-    public partial class Playing_now_screen : UserControl
+    public partial class Player : UserControl
     {
-        public Playing_now_screen()
+        public Player()
         {
             InitializeComponent();
+            StopPlayer();
         }
     }
 }

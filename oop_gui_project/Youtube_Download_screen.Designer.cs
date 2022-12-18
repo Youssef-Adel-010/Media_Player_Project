@@ -1,6 +1,6 @@
 ﻿namespace DesignTest
 {
-    partial class Youtube_Download_screen
+    partial class Youtube_download_screen
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Youtube_Download_screen));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Youtube_download_screen));
             this.YoutubeDownloadPanel = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();

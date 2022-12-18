@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DesignTest
 {
-    public partial class About_us : UserControl
+    public partial class About_us_screen : UserControl
     {
-        public About_us()
+        public About_us_screen()
         {
             InitializeComponent();
         }
