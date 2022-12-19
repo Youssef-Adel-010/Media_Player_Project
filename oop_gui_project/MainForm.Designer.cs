@@ -45,6 +45,7 @@
             this.PlayListBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.LogoBtn = new Bunifu.Framework.UI.BunifuImageButton();
             this.ControlPanel = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.NextBtn = new Bunifu.Framework.UI.BunifuImageButton();
             this.PreviousBtn = new Bunifu.Framework.UI.BunifuImageButton();
             this.PlayPtn = new Bunifu.Framework.UI.BunifuImageButton();
@@ -58,15 +59,16 @@
             this.LeftCounterLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.SongProgressBar = new Bunifu.Framework.UI.BunifuProgressBar();
             this.Container = new System.Windows.Forms.Panel();
+            this.base_screen1 = new DesignTest.Base_screen();
             this.PlaylistBox = new System.Windows.Forms.ListBox();
             this.PlayBtn = new System.Windows.Forms.Button();
-            this.base_screen1 = new DesignTest.Base_screen();
             this.LeftSidePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MaxmizeBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoBtn)).BeginInit();
             this.ControlPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NextBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PreviousBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlayPtn)).BeginInit();
@@ -480,6 +482,7 @@
             // 
             this.ControlPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ControlPanel.BackgroundImage")));
             this.ControlPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ControlPanel.Controls.Add(this.bunifuImageButton1);
             this.ControlPanel.Controls.Add(this.NextBtn);
             this.ControlPanel.Controls.Add(this.PreviousBtn);
             this.ControlPanel.Controls.Add(this.PlayPtn);
@@ -503,13 +506,27 @@
             this.ControlPanel.Size = new System.Drawing.Size(640, 67);
             this.ControlPanel.TabIndex = 1;
             // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(206, 19);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(34, 33);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 19;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            // 
             // NextBtn
             // 
             this.NextBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.NextBtn.BackColor = System.Drawing.Color.Transparent;
             this.NextBtn.Image = ((System.Drawing.Image)(resources.GetObject("NextBtn.Image")));
             this.NextBtn.ImageActive = null;
-            this.NextBtn.Location = new System.Drawing.Point(363, 19);
+            this.NextBtn.Location = new System.Drawing.Point(321, 19);
             this.NextBtn.Name = "NextBtn";
             this.NextBtn.Size = new System.Drawing.Size(32, 33);
             this.NextBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -523,7 +540,7 @@
             this.PreviousBtn.BackColor = System.Drawing.Color.Transparent;
             this.PreviousBtn.Image = ((System.Drawing.Image)(resources.GetObject("PreviousBtn.Image")));
             this.PreviousBtn.ImageActive = null;
-            this.PreviousBtn.Location = new System.Drawing.Point(227, 19);
+            this.PreviousBtn.Location = new System.Drawing.Point(246, 19);
             this.PreviousBtn.Name = "PreviousBtn";
             this.PreviousBtn.Size = new System.Drawing.Size(32, 33);
             this.PreviousBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -537,7 +554,7 @@
             this.PlayPtn.BackColor = System.Drawing.Color.Transparent;
             this.PlayPtn.Image = ((System.Drawing.Image)(resources.GetObject("PlayPtn.Image")));
             this.PlayPtn.ImageActive = null;
-            this.PlayPtn.Location = new System.Drawing.Point(261, 19);
+            this.PlayPtn.Location = new System.Drawing.Point(284, 19);
             this.PlayPtn.Name = "PlayPtn";
             this.PlayPtn.Size = new System.Drawing.Size(32, 33);
             this.PlayPtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -551,9 +568,9 @@
             this.StopBtn.BackColor = System.Drawing.Color.Transparent;
             this.StopBtn.Image = ((System.Drawing.Image)(resources.GetObject("StopBtn.Image")));
             this.StopBtn.ImageActive = null;
-            this.StopBtn.Location = new System.Drawing.Point(329, 19);
+            this.StopBtn.Location = new System.Drawing.Point(359, 21);
             this.StopBtn.Name = "StopBtn";
-            this.StopBtn.Size = new System.Drawing.Size(32, 33);
+            this.StopBtn.Size = new System.Drawing.Size(33, 29);
             this.StopBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.StopBtn.TabIndex = 16;
             this.StopBtn.TabStop = false;
@@ -579,7 +596,7 @@
             this.PauseBtn.BackColor = System.Drawing.Color.Transparent;
             this.PauseBtn.Image = ((System.Drawing.Image)(resources.GetObject("PauseBtn.Image")));
             this.PauseBtn.ImageActive = null;
-            this.PauseBtn.Location = new System.Drawing.Point(295, 19);
+            this.PauseBtn.Location = new System.Drawing.Point(284, 19);
             this.PauseBtn.Name = "PauseBtn";
             this.PauseBtn.Size = new System.Drawing.Size(32, 33);
             this.PauseBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -674,6 +691,14 @@
             this.Container.Size = new System.Drawing.Size(640, 550);
             this.Container.TabIndex = 24;
             // 
+            // base_screen1
+            // 
+            this.base_screen1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.base_screen1.Location = new System.Drawing.Point(0, 0);
+            this.base_screen1.Name = "base_screen1";
+            this.base_screen1.Size = new System.Drawing.Size(640, 550);
+            this.base_screen1.TabIndex = 29;
+            // 
             // PlaylistBox
             // 
             this.PlaylistBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -705,14 +730,6 @@
             this.PlayBtn.UseVisualStyleBackColor = false;
             this.PlayBtn.Click += new System.EventHandler(this.PlayBtn_Click);
             // 
-            // base_screen1
-            // 
-            this.base_screen1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.base_screen1.Location = new System.Drawing.Point(0, 0);
-            this.base_screen1.Name = "base_screen1";
-            this.base_screen1.Size = new System.Drawing.Size(640, 550);
-            this.base_screen1.TabIndex = 29;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -733,6 +750,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.LogoBtn)).EndInit();
             this.ControlPanel.ResumeLayout(false);
             this.ControlPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NextBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PreviousBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlayPtn)).EndInit();
@@ -777,6 +795,7 @@
         private System.Windows.Forms.ListBox PlaylistBox;
         private System.Windows.Forms.Button PlayBtn;
         private DesignTest.Base_screen base_screen1;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
     }
 }
 
