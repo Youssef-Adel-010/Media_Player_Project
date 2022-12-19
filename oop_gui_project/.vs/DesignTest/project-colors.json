@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0b43528e-a63d-4d69-8e6f-78392868b261": {
+      "ProjectGuid": "0b43528e-a63d-4d69-8e6f-78392868b261",
+      "DisplayName": "MediaPlayer",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

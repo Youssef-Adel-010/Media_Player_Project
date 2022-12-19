@@ -111,9 +111,9 @@
             this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.White;
             this.bunifuCustomLabel3.Location = new System.Drawing.Point(60, 158);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(583, 23);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(582, 23);
             this.bunifuCustomLabel3.TabIndex = 4;
-            this.bunifuCustomLabel3.Text = "The Professionl Player for Your Songs, Movies and your Favourite Moments.\r\n";
+            this.bunifuCustomLabel3.Text = "The Professional Player for your Songs, Movies and your Favorite Moments.\r\n";
             // 
             // bunifuCustomLabel2
             // 
@@ -135,9 +135,10 @@
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(64, 107);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(283, 23);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(274, 23);
             this.bunifuCustomLabel1.TabIndex = 1;
-            this.bunifuCustomLabel1.Text = "We Think.. We Code.. We Develope.";
+            this.bunifuCustomLabel1.Text = "We Think.. We Code.. We Develop.";
+            this.bunifuCustomLabel1.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);
             // 
             // SplashLabel
             // 

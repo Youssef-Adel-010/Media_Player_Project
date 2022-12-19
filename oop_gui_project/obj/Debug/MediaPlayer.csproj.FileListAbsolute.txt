@@ -157,7 +157,6 @@ C:\oop_gui_project2\media_player\media_player\oop_gui_project\bin\Debug\YoutubeE
 C:\Users\pc\Documents\GitHub\Media_Player_Project\oop_gui_project\bin\Debug\YoutubeExtractor.dll
 C:\Users\pc\Documents\GitHub\Media_Player_Project\oop_gui_project\bin\Debug\YoutubeExtractor.xml
 C:\Users\pc\Documents\GitHub\Media_Player_Project\oop_gui_project\obj\Debug\DesignTest.About_us_screen.resources
-C:\Users\pc\Documents\GitHub\Media_Player_Project\oop_gui_project\obj\Debug\DesignTest.Player.resources
 C:\oop_project\oop_gui_project\bin\Debug\DesignTest.exe.config
 C:\oop_project\oop_gui_project\bin\Debug\DesignTest.exe
 C:\oop_project\oop_gui_project\bin\Debug\DesignTest.pdb
@@ -217,3 +216,5 @@ C:\project\oop_gui_project\obj\Debug\MediaPlayer.csproj.CoreCompileInputs.cache
 C:\project\oop_gui_project\obj\Debug\MediaPlayer.csproj.CopyComplete
 C:\project\oop_gui_project\obj\Debug\DesignTest.exe
 C:\project\oop_gui_project\obj\Debug\DesignTest.pdb
+C:\Users\pc\Documents\GitHub\Media_Player_Project\oop_gui_project\obj\Debug\DesignTest.Login.resources
+C:\Users\pc\Documents\GitHub\Media_Player_Project\oop_gui_project\obj\Debug\DesignTest.Splash_Screen_Form.resources

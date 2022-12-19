@@ -10,7 +10,6 @@ namespace oop_gui_project
 
         /// Global declarations of all screens.
         public Base_screen base_scr = new Base_screen();
-        public Player player = new Player();
         public Youtube_download_screen yt_download_scr = new Youtube_download_screen();
         public About_us_screen about_scr = new About_us_screen();
         public Speech_read_screen speech_scr = new Speech_read_screen();
@@ -44,25 +43,31 @@ namespace oop_gui_project
             this.WindowState = FormWindowState.Minimized;
         }
 
+        /// Player
+
+        private void ShowPlayer()
+        {
+            Container.Controls.Clear();
+            Container.Controls.Add(MediaPlayer);
+            MediaPlayer.BringToFront();
+        }
+
+        public void PlayFile(int idx)
+        {
+            if (idx < 0 || idx >= playlist.Count) return;
+            SongNameLabel.Text = playlist[idx].name();
+            MediaPlayer.URL = playlist[idx].path();
+            MediaPlayer.settings.autoStart = true;
+            MediaPlayer.Ctlcontrols.next();
+            MediaPlayer.Ctlcontrols.play();
+            ShowPlayer();
+        }
+
         /// Playlist
 
         private List<media> playlist = new List<media>();
         private int start_index = 0;
 
-        public void PlayFile(int idx)
-        {
-            player.PlayFile(playlist[idx]);
-            AddUserControl(player);
-            string songName = playlist[idx].name();
-            for (int i = songName.Length - 1; i >= 0; i--)
-            {
-                // Remove file types (.mp4, .mov, etc..).
-                if (songName[i] != '.') continue;
-                songName = songName.Substring(0, i);
-                break;
-            }
-            SongNameLabel.Text = songName;
-        }
         private void PlaylistBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             start_index = PlaylistBox.SelectedIndex;
@@ -77,7 +82,7 @@ namespace oop_gui_project
         private void AddUserControl(UserControl user)
         {
             // This base function adds user controls, and displays the screen at the top.
-            
+
             user.Dock = DockStyle.Fill;
             Container.Controls.Clear();
             Container.Controls.Add(user);
@@ -98,7 +103,7 @@ namespace oop_gui_project
         }
         private void NowPlayingBtn_Click(object sender, EventArgs e)
         {
-            AddUserControl(player);
+            ShowPlayer();
         }
         private void DownloadBtn_Click(object sender, EventArgs e)
         {
@@ -134,16 +139,24 @@ namespace oop_gui_project
                 return;
             }
             string[] FileName = OpenFile.SafeFileNames;
+            for (int i = 0; i < FileName.Length; i++)
+            {
+                // Remove file types (.mp4, .mov, etc..) from the name.
+                for (int j = FileName[i].Length - 1; j >= 0; j--)
+                {
+                    if (FileName[i][j] != '.') continue;
+                    FileName[i] = FileName[i].Substring(0, j);
+                    break;
+                }
+            }
             string[] FilePath = OpenFile.FileNames;
             for (int i = 0; i < FileName.Length; i++)
             {
-                media current = new media(FileName[i], FilePath[i]);
-                playlist.Add(current);
+                playlist.Add(new media(FileName[i], FilePath[i]));
                 PlaylistBox.Items.Add(FileName[i]);
             }
             PlayFile(start_index);
         }
-
     }
 }
 
