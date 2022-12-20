@@ -127,6 +127,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Speech_read_screen.resx">
       <DependentUpon>Speech_read_screen.cs</DependentUpon>
@@ -173,6 +174,14 @@
   <ItemGroup>
     <Content Include="media-player-high-resolution-logo-white-on-transparent-background %281%29.ico" />
     <Content Include="media-player-high-resolution-logo-white-on-transparent-background.ico" />
+    <None Include="Resources\LoopBtn3.Image.png" />
+    <None Include="Resources\ShuffleBtn2.Image.png" />
+    <None Include="Resources\ShuffleBtn.Image.png" />
+    <None Include="Resources\LoopBtn.Image.png" />
+    <None Include="Resources\LoopBtn2.Image.png" />
+    <None Include="Resources\play_50px.png" />
+    <None Include="Resources\play_50px.bmp" />
+    <None Include="Resources\pause_50px.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

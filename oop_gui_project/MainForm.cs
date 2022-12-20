@@ -43,6 +43,39 @@ namespace oop_gui_project
             this.WindowState = FormWindowState.Minimized;
         }
 
+        /// Playlist
+
+        private List<media> playlist = new List<media>();
+        private List<media> shuffledList = new List<media>();
+        bool _playing = false;
+        int _looping = 0;
+        bool _shuffled = false;
+        private int play_index = -1;
+
+        private void PlaylistBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            play_index = PlaylistBox.SelectedIndex;
+        }
+        private void PlayBtn_Click(object sender, EventArgs e)
+        {
+            PlayFile(ref play_index);
+        }
+
+        private void Shuffle()
+        {
+            if (playlist.Count == 0) return;
+            shuffledList.Clear();
+            List<media> temp = new List<media>();
+            for (int i = 0; i < playlist.Count; i++) temp.Add(playlist[i]);
+            Random rnd = new Random();
+            while (temp.Count > 0)
+            {
+                int rand = rnd.Next(0, temp.Count);
+                shuffledList.Add(temp[rand]);
+                temp.RemoveAt(rand);
+            }
+        }
+
         /// Player
 
         private void ShowPlayer()
@@ -52,30 +85,52 @@ namespace oop_gui_project
             MediaPlayer.BringToFront();
         }
 
-        public void PlayFile(int idx)
+        public void Play()
         {
-            if (idx < 0 || idx >= playlist.Count) return;
-            SongNameLabel.Text = playlist[idx].name();
-            MediaPlayer.URL = playlist[idx].path();
+            MediaPlayer.Ctlcontrols.play();
+            PlayPauseBtn.Image = DesignTest.Properties.Resources.pause_50px;
+            _playing = true;
+        }
+
+        public void Pause()
+        {
+            MediaPlayer.Ctlcontrols.pause();
+            PlayPauseBtn.Image = DesignTest.Properties.Resources.play_50px;
+            _playing = false;
+        }
+
+        public void PlayFile(media media)
+        {
+            SongNameLabel.Text = media.name();
+            MediaPlayer.URL = media.path();
             MediaPlayer.settings.autoStart = true;
             MediaPlayer.Ctlcontrols.next();
-            MediaPlayer.Ctlcontrols.play();
+            Play();
             ShowPlayer();
         }
 
-        /// Playlist
-
-        private List<media> playlist = new List<media>();
-        private int start_index = 0;
-
-        private void PlaylistBox_SelectedIndexChanged(object sender, EventArgs e)
+        public void PlayFile(ref int idx)
         {
-            start_index = PlaylistBox.SelectedIndex;
+            if (idx < 0 && _looping != 2) {
+                idx = 0;
+            }
+            else if (idx < 0) 
+            {
+                idx = playlist.Count - 1;
+            }
+            if (idx >= playlist.Count)
+            {
+                if (_looping != 2) idx = playlist.Count - 1;
+                else idx = 0;
+            }
+            if (_shuffled && shuffledList.Count != playlist.Count)
+            {
+                Shuffle();
+            }
+            if (_shuffled) PlayFile(shuffledList[idx]);
+            else PlayFile(playlist[idx]);
         }
-        private void PlayBtn_Click(object sender, EventArgs e)
-        {
-            PlayFile(start_index);
-        }
+
 
         /// Left-Side Buttons.
 
@@ -122,20 +177,22 @@ namespace oop_gui_project
 
         private void AudioSlider_ValueChanged(object sender, EventArgs e)
         {
+            MediaPlayer.settings.volume = AudioSlider.Value;
             AudioLabel.Text = AudioSlider.Value.ToString();
         }
+
         private void BrowseBtn_Click(object sender, EventArgs e)
         {
             // add new media to playlist and plays the first one.
 
-            start_index = playlist.Count;
+            play_index = playlist.Count;
             OpenFileDialog OpenFile = new OpenFileDialog();
             OpenFile.Title = "Select Media";
             OpenFile.Multiselect = true;
             OpenFile.Filter = "(mp3, wav, mp4, mov, wmv, mpg, avi, 3gp, flv)|*.mp3;*.wav;*.mp4;*.3gp;*.avi;*.mov;*.flv;*.wmv;.mpg|all files|*.*";
             if (OpenFile.ShowDialog() != DialogResult.OK)
             {
-                start_index--;
+                play_index--;
                 return;
             }
             string[] FileName = OpenFile.SafeFileNames;
@@ -155,8 +212,90 @@ namespace oop_gui_project
                 playlist.Add(new media(FileName[i], FilePath[i]));
                 PlaylistBox.Items.Add(FileName[i]);
             }
-            PlayFile(start_index);
+            PlayFile(ref play_index);
         }
+        
+        /// Bottom Bar Buttons.
+        
+        private void PlayPauseBtn_Click(object sender, EventArgs e)
+        {
+            if (_playing) Pause();
+            else Play();
+        }
+
+        private void NextBtn_Click(object sender, EventArgs e)
+        {
+            if (_looping != 1) play_index++;
+            PlayFile(ref play_index);
+        }
+
+        private void PreviousBtn_Click(object sender, EventArgs e)
+        {
+            if (_looping != 1) play_index--;
+            PlayFile(ref play_index);
+        }
+
+        private void LoopBtn_Click(object sender, EventArgs e)
+        {
+            switch (_looping)
+            {
+                case 0: 
+                    LoopBtn.Image = DesignTest.Properties.Resources.LoopBtn2_Image;
+                    break;
+                case 1:
+                    LoopBtn.Image = DesignTest.Properties.Resources.LoopBtn3_Image;
+                    break;
+                default:
+                    LoopBtn.Image = DesignTest.Properties.Resources.LoopBtn_Image;
+                    break;
+            }
+            _looping = (_looping+1)%3;
+        }
+
+        private void ShuffleBtn_Click(object sender, EventArgs e)
+        {
+            if (_shuffled)
+            {
+                ShuffleBtn.Image = DesignTest.Properties.Resources.ShuffleBtn_Image;
+                shuffledList.Clear();
+            }
+            else
+            {
+                ShuffleBtn.Image = DesignTest.Properties.Resources.ShuffleBtn2_Image;
+                Shuffle();
+            }
+            _shuffled = !_shuffled;
+        }
+
+        private void SongProgressBar_progressChanged(object sender,EventArgs e)
+        {
+            if (MediaPlayer.playState == WMPLib.WMPPlayState.wmppsPlaying)
+            {
+                SongProgressBar.Maximum_Value = (int)MediaPlayer.Ctlcontrols.currentItem.duration;
+                timer1.Start();
+            }
+            else if (MediaPlayer.playState == WMPLib.WMPPlayState.wmppsPaused)
+            {
+                timer1.Stop();
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (MediaPlayer.playState == WMPLib.WMPPlayState.wmppsPlaying)
+            {
+                SongProgressBar.Value =(int) MediaPlayer.Ctlcontrols.currentPosition;
+                LeftCounterLabel.Text = MediaPlayer.Ctlcontrols.currentPositionString;
+                RightCounterLabel.Text = MediaPlayer.Ctlcontrols.currentItem.durationString.ToString();
+            }
+            if (MediaPlayer.playState == WMPLib.WMPPlayState.wmppsMediaEnded)
+            {
+                if (_looping != 1) play_index++;
+                PlayFile(ref play_index);
+            }
+        }
+
     }
 }
 
+ 

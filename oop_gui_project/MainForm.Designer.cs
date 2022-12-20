@@ -31,6 +31,25 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.WelcomeScreen = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.Container = new System.Windows.Forms.Panel();
+            this.base_screen1 = new DesignTest.Base_screen();
+            this.PlaylistBox = new System.Windows.Forms.ListBox();
+            this.PlayBtn = new System.Windows.Forms.Button();
+            this.MediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.ControlPanel = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.LoopBtn = new Bunifu.Framework.UI.BunifuImageButton();
+            this.NextBtn = new Bunifu.Framework.UI.BunifuImageButton();
+            this.PreviousBtn = new Bunifu.Framework.UI.BunifuImageButton();
+            this.PlayPauseBtn = new Bunifu.Framework.UI.BunifuImageButton();
+            this.ShuffleBtn = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton5 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.AudioLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.AudioSlider = new Bunifu.Framework.UI.BunifuSlider();
+            this.SongNameLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.RightCounterLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.LeftCounterLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.SongProgressBar = new Bunifu.Framework.UI.BunifuProgressBar();
             this.LeftSidePanel = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.SpeechBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Home = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -44,46 +63,291 @@
             this.NowPlayingBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.PlayListBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.LogoBtn = new Bunifu.Framework.UI.BunifuImageButton();
-            this.ControlPanel = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.NextBtn = new Bunifu.Framework.UI.BunifuImageButton();
-            this.PreviousBtn = new Bunifu.Framework.UI.BunifuImageButton();
-            this.PlayPtn = new Bunifu.Framework.UI.BunifuImageButton();
-            this.StopBtn = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton5 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.PauseBtn = new Bunifu.Framework.UI.BunifuImageButton();
-            this.AudioLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.AudioSlider = new Bunifu.Framework.UI.BunifuSlider();
-            this.SongNameLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.RightCounterLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.LeftCounterLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.SongProgressBar = new Bunifu.Framework.UI.BunifuProgressBar();
-            this.Container = new System.Windows.Forms.Panel();
-            this.base_screen1 = new DesignTest.Base_screen();
-            this.PlaylistBox = new System.Windows.Forms.ListBox();
-            this.PlayBtn = new System.Windows.Forms.Button();
-            this.MediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
+            this.Container.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MediaPlayer)).BeginInit();
+            this.ControlPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LoopBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NextBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PreviousBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PlayPauseBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShuffleBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).BeginInit();
             this.LeftSidePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MaxmizeBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoBtn)).BeginInit();
-            this.ControlPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NextBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PreviousBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PlayPtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StopBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PauseBtn)).BeginInit();
-            this.Container.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MediaPlayer)).BeginInit();
             this.SuspendLayout();
             // 
             // WelcomeScreen
             // 
             this.WelcomeScreen.ElipseRadius = 5;
             this.WelcomeScreen.TargetControl = this;
+            // 
+            // Container
+            // 
+            this.Container.BackColor = System.Drawing.Color.DarkBlue;
+            this.Container.Controls.Add(this.base_screen1);
+            this.Container.Controls.Add(this.PlaylistBox);
+            this.Container.Controls.Add(this.PlayBtn);
+            this.Container.Controls.Add(this.MediaPlayer);
+            this.Container.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Container.Location = new System.Drawing.Point(180, 0);
+            this.Container.Name = "Container";
+            this.Container.Size = new System.Drawing.Size(640, 550);
+            this.Container.TabIndex = 24;
+            // 
+            // base_screen1
+            // 
+            this.base_screen1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.base_screen1.Location = new System.Drawing.Point(0, 0);
+            this.base_screen1.Margin = new System.Windows.Forms.Padding(4);
+            this.base_screen1.Name = "base_screen1";
+            this.base_screen1.Size = new System.Drawing.Size(640, 550);
+            this.base_screen1.TabIndex = 29;
+            // 
+            // PlaylistBox
+            // 
+            this.PlaylistBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.PlaylistBox.BackColor = System.Drawing.Color.Navy;
+            this.PlaylistBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PlaylistBox.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlaylistBox.ForeColor = System.Drawing.SystemColors.Menu;
+            this.PlaylistBox.FormattingEnabled = true;
+            this.PlaylistBox.ItemHeight = 26;
+            this.PlaylistBox.Location = new System.Drawing.Point(8, 14);
+            this.PlaylistBox.Name = "PlaylistBox";
+            this.PlaylistBox.Size = new System.Drawing.Size(620, 390);
+            this.PlaylistBox.TabIndex = 19;
+            this.PlaylistBox.SelectedIndexChanged += new System.EventHandler(this.PlaylistBox_SelectedIndexChanged);
+            // 
+            // PlayBtn
+            // 
+            this.PlayBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.PlayBtn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.PlayBtn.FlatAppearance.BorderSize = 0;
+            this.PlayBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PlayBtn.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlayBtn.ForeColor = System.Drawing.SystemColors.Menu;
+            this.PlayBtn.Location = new System.Drawing.Point(30, 421);
+            this.PlayBtn.Name = "PlayBtn";
+            this.PlayBtn.Size = new System.Drawing.Size(150, 50);
+            this.PlayBtn.TabIndex = 20;
+            this.PlayBtn.Text = "Play";
+            this.PlayBtn.UseVisualStyleBackColor = false;
+            this.PlayBtn.Click += new System.EventHandler(this.PlayBtn_Click);
+            // 
+            // MediaPlayer
+            // 
+            this.MediaPlayer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MediaPlayer.Enabled = true;
+            this.MediaPlayer.Location = new System.Drawing.Point(0, 0);
+            this.MediaPlayer.Name = "MediaPlayer";
+            this.MediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MediaPlayer.OcxState")));
+            this.MediaPlayer.Size = new System.Drawing.Size(640, 550);
+            this.MediaPlayer.TabIndex = 30;
+            this.MediaPlayer.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // ControlPanel
+            // 
+            this.ControlPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ControlPanel.BackgroundImage")));
+            this.ControlPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ControlPanel.Controls.Add(this.LoopBtn);
+            this.ControlPanel.Controls.Add(this.NextBtn);
+            this.ControlPanel.Controls.Add(this.PreviousBtn);
+            this.ControlPanel.Controls.Add(this.PlayPauseBtn);
+            this.ControlPanel.Controls.Add(this.ShuffleBtn);
+            this.ControlPanel.Controls.Add(this.bunifuImageButton5);
+            this.ControlPanel.Controls.Add(this.AudioLabel);
+            this.ControlPanel.Controls.Add(this.AudioSlider);
+            this.ControlPanel.Controls.Add(this.SongNameLabel);
+            this.ControlPanel.Controls.Add(this.RightCounterLabel);
+            this.ControlPanel.Controls.Add(this.LeftCounterLabel);
+            this.ControlPanel.Controls.Add(this.SongProgressBar);
+            this.ControlPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ControlPanel.GradientBottomLeft = System.Drawing.Color.Black;
+            this.ControlPanel.GradientBottomRight = System.Drawing.Color.Blue;
+            this.ControlPanel.GradientTopLeft = System.Drawing.Color.Cyan;
+            this.ControlPanel.GradientTopRight = System.Drawing.Color.DarkViolet;
+            this.ControlPanel.Location = new System.Drawing.Point(180, 483);
+            this.ControlPanel.Name = "ControlPanel";
+            this.ControlPanel.Quality = 10;
+            this.ControlPanel.Size = new System.Drawing.Size(640, 67);
+            this.ControlPanel.TabIndex = 1;
+            // 
+            // LoopBtn
+            // 
+            this.LoopBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.LoopBtn.BackColor = System.Drawing.Color.Transparent;
+            this.LoopBtn.Image = ((System.Drawing.Image)(resources.GetObject("LoopBtn.Image")));
+            this.LoopBtn.ImageActive = null;
+            this.LoopBtn.Location = new System.Drawing.Point(240, 24);
+            this.LoopBtn.Name = "LoopBtn";
+            this.LoopBtn.Size = new System.Drawing.Size(24, 24);
+            this.LoopBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LoopBtn.TabIndex = 19;
+            this.LoopBtn.TabStop = false;
+            this.LoopBtn.Zoom = 10;
+            this.LoopBtn.Click += new System.EventHandler(this.LoopBtn_Click);
+            // 
+            // NextBtn
+            // 
+            this.NextBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.NextBtn.BackColor = System.Drawing.Color.Transparent;
+            this.NextBtn.Image = ((System.Drawing.Image)(resources.GetObject("NextBtn.Image")));
+            this.NextBtn.ImageActive = null;
+            this.NextBtn.Location = new System.Drawing.Point(330, 24);
+            this.NextBtn.Name = "NextBtn";
+            this.NextBtn.Size = new System.Drawing.Size(24, 24);
+            this.NextBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.NextBtn.TabIndex = 18;
+            this.NextBtn.TabStop = false;
+            this.NextBtn.Zoom = 10;
+            this.NextBtn.Click += new System.EventHandler(this.NextBtn_Click);
+            // 
+            // PreviousBtn
+            // 
+            this.PreviousBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.PreviousBtn.BackColor = System.Drawing.Color.Transparent;
+            this.PreviousBtn.Image = ((System.Drawing.Image)(resources.GetObject("PreviousBtn.Image")));
+            this.PreviousBtn.ImageActive = null;
+            this.PreviousBtn.Location = new System.Drawing.Point(270, 24);
+            this.PreviousBtn.Name = "PreviousBtn";
+            this.PreviousBtn.Size = new System.Drawing.Size(24, 24);
+            this.PreviousBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PreviousBtn.TabIndex = 17;
+            this.PreviousBtn.TabStop = false;
+            this.PreviousBtn.Zoom = 10;
+            this.PreviousBtn.Click += new System.EventHandler(this.PreviousBtn_Click);
+            // 
+            // PlayPauseBtn
+            // 
+            this.PlayPauseBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.PlayPauseBtn.BackColor = System.Drawing.Color.Transparent;
+            this.PlayPauseBtn.Image = ((System.Drawing.Image)(resources.GetObject("PlayPauseBtn.Image")));
+            this.PlayPauseBtn.ImageActive = null;
+            this.PlayPauseBtn.Location = new System.Drawing.Point(300, 24);
+            this.PlayPauseBtn.Name = "PlayPauseBtn";
+            this.PlayPauseBtn.Size = new System.Drawing.Size(24, 24);
+            this.PlayPauseBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PlayPauseBtn.TabIndex = 14;
+            this.PlayPauseBtn.TabStop = false;
+            this.PlayPauseBtn.Zoom = 10;
+            this.PlayPauseBtn.Click += new System.EventHandler(this.PlayPauseBtn_Click);
+            // 
+            // ShuffleBtn
+            // 
+            this.ShuffleBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.ShuffleBtn.BackColor = System.Drawing.Color.Transparent;
+            this.ShuffleBtn.Image = global::DesignTest.Properties.Resources.ShuffleBtn_Image;
+            this.ShuffleBtn.ImageActive = null;
+            this.ShuffleBtn.InitialImage = null;
+            this.ShuffleBtn.Location = new System.Drawing.Point(360, 24);
+            this.ShuffleBtn.Name = "ShuffleBtn";
+            this.ShuffleBtn.Size = new System.Drawing.Size(24, 24);
+            this.ShuffleBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ShuffleBtn.TabIndex = 16;
+            this.ShuffleBtn.TabStop = false;
+            this.ShuffleBtn.Zoom = 10;
+            this.ShuffleBtn.Click += new System.EventHandler(this.ShuffleBtn_Click);
+            // 
+            // bunifuImageButton5
+            // 
+            this.bunifuImageButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuImageButton5.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton5.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton5.Image")));
+            this.bunifuImageButton5.ImageActive = null;
+            this.bunifuImageButton5.Location = new System.Drawing.Point(494, 32);
+            this.bunifuImageButton5.Name = "bunifuImageButton5";
+            this.bunifuImageButton5.Size = new System.Drawing.Size(28, 22);
+            this.bunifuImageButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton5.TabIndex = 13;
+            this.bunifuImageButton5.TabStop = false;
+            this.bunifuImageButton5.Zoom = 10;
+            // 
+            // AudioLabel
+            // 
+            this.AudioLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.AudioLabel.AutoSize = true;
+            this.AudioLabel.BackColor = System.Drawing.Color.Transparent;
+            this.AudioLabel.Location = new System.Drawing.Point(610, 37);
+            this.AudioLabel.Name = "AudioLabel";
+            this.AudioLabel.Size = new System.Drawing.Size(25, 13);
+            this.AudioLabel.TabIndex = 12;
+            this.AudioLabel.Text = "100";
+            this.AudioLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // AudioSlider
+            // 
+            this.AudioSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.AudioSlider.BackColor = System.Drawing.Color.Transparent;
+            this.AudioSlider.BackgroudColor = System.Drawing.Color.DarkGray;
+            this.AudioSlider.BorderRadius = 0;
+            this.AudioSlider.IndicatorColor = System.Drawing.Color.RoyalBlue;
+            this.AudioSlider.Location = new System.Drawing.Point(527, 30);
+            this.AudioSlider.Margin = new System.Windows.Forms.Padding(4);
+            this.AudioSlider.MaximumValue = 100;
+            this.AudioSlider.Name = "AudioSlider";
+            this.AudioSlider.Size = new System.Drawing.Size(82, 30);
+            this.AudioSlider.TabIndex = 9;
+            this.AudioSlider.Value = 100;
+            this.AudioSlider.ValueChanged += new System.EventHandler(this.AudioSlider_ValueChanged);
+            // 
+            // SongNameLabel
+            // 
+            this.SongNameLabel.AutoSize = true;
+            this.SongNameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.SongNameLabel.Font = new System.Drawing.Font("Calibri", 12F);
+            this.SongNameLabel.Location = new System.Drawing.Point(2, 26);
+            this.SongNameLabel.MaximumSize = new System.Drawing.Size(262, 32);
+            this.SongNameLabel.Name = "SongNameLabel";
+            this.SongNameLabel.Size = new System.Drawing.Size(0, 19);
+            this.SongNameLabel.TabIndex = 11;
+            this.SongNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // RightCounterLabel
+            // 
+            this.RightCounterLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.RightCounterLabel.AutoSize = true;
+            this.RightCounterLabel.BackColor = System.Drawing.Color.Transparent;
+            this.RightCounterLabel.Location = new System.Drawing.Point(603, 14);
+            this.RightCounterLabel.Name = "RightCounterLabel";
+            this.RightCounterLabel.Size = new System.Drawing.Size(34, 13);
+            this.RightCounterLabel.TabIndex = 10;
+            this.RightCounterLabel.Text = "00:00";
+            this.RightCounterLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LeftCounterLabel
+            // 
+            this.LeftCounterLabel.AutoSize = true;
+            this.LeftCounterLabel.BackColor = System.Drawing.Color.Transparent;
+            this.LeftCounterLabel.Location = new System.Drawing.Point(5, 14);
+            this.LeftCounterLabel.Name = "LeftCounterLabel";
+            this.LeftCounterLabel.Size = new System.Drawing.Size(34, 13);
+            this.LeftCounterLabel.TabIndex = 9;
+            this.LeftCounterLabel.Text = "00:00";
+            this.LeftCounterLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // SongProgressBar
+            // 
+            this.SongProgressBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SongProgressBar.BackColor = System.Drawing.Color.Silver;
+            this.SongProgressBar.BorderRadius = 5;
+            this.SongProgressBar.Location = new System.Drawing.Point(6, 3);
+            this.SongProgressBar.Margin = new System.Windows.Forms.Padding(4);
+            this.SongProgressBar.MaximumValue = 100;
+            this.SongProgressBar.Name = "SongProgressBar";
+            this.SongProgressBar.ProgressColor = System.Drawing.Color.Teal;
+            this.SongProgressBar.Size = new System.Drawing.Size(628, 10);
+            this.SongProgressBar.TabIndex = 0;
+            this.SongProgressBar.Value = 0;
+            this.SongProgressBar.progressChanged += new System.EventHandler(this.SongProgressBar_progressChanged);
             // 
             // LeftSidePanel
             // 
@@ -480,270 +744,6 @@
             this.LogoBtn.TabStop = false;
             this.LogoBtn.Zoom = 10;
             // 
-            // ControlPanel
-            // 
-            this.ControlPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ControlPanel.BackgroundImage")));
-            this.ControlPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ControlPanel.Controls.Add(this.bunifuImageButton1);
-            this.ControlPanel.Controls.Add(this.NextBtn);
-            this.ControlPanel.Controls.Add(this.PreviousBtn);
-            this.ControlPanel.Controls.Add(this.PlayPtn);
-            this.ControlPanel.Controls.Add(this.StopBtn);
-            this.ControlPanel.Controls.Add(this.bunifuImageButton5);
-            this.ControlPanel.Controls.Add(this.PauseBtn);
-            this.ControlPanel.Controls.Add(this.AudioLabel);
-            this.ControlPanel.Controls.Add(this.AudioSlider);
-            this.ControlPanel.Controls.Add(this.SongNameLabel);
-            this.ControlPanel.Controls.Add(this.RightCounterLabel);
-            this.ControlPanel.Controls.Add(this.LeftCounterLabel);
-            this.ControlPanel.Controls.Add(this.SongProgressBar);
-            this.ControlPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ControlPanel.GradientBottomLeft = System.Drawing.Color.Black;
-            this.ControlPanel.GradientBottomRight = System.Drawing.Color.Blue;
-            this.ControlPanel.GradientTopLeft = System.Drawing.Color.Cyan;
-            this.ControlPanel.GradientTopRight = System.Drawing.Color.DarkViolet;
-            this.ControlPanel.Location = new System.Drawing.Point(180, 483);
-            this.ControlPanel.Name = "ControlPanel";
-            this.ControlPanel.Quality = 10;
-            this.ControlPanel.Size = new System.Drawing.Size(640, 67);
-            this.ControlPanel.TabIndex = 1;
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(240, 24);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(24, 24);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 19;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            // 
-            // NextBtn
-            // 
-            this.NextBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.NextBtn.BackColor = System.Drawing.Color.Transparent;
-            this.NextBtn.Image = ((System.Drawing.Image)(resources.GetObject("NextBtn.Image")));
-            this.NextBtn.ImageActive = null;
-            this.NextBtn.Location = new System.Drawing.Point(330, 24);
-            this.NextBtn.Name = "NextBtn";
-            this.NextBtn.Size = new System.Drawing.Size(24, 24);
-            this.NextBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.NextBtn.TabIndex = 18;
-            this.NextBtn.TabStop = false;
-            this.NextBtn.Zoom = 10;
-            // 
-            // PreviousBtn
-            // 
-            this.PreviousBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.PreviousBtn.BackColor = System.Drawing.Color.Transparent;
-            this.PreviousBtn.Image = ((System.Drawing.Image)(resources.GetObject("PreviousBtn.Image")));
-            this.PreviousBtn.ImageActive = null;
-            this.PreviousBtn.Location = new System.Drawing.Point(270, 24);
-            this.PreviousBtn.Name = "PreviousBtn";
-            this.PreviousBtn.Size = new System.Drawing.Size(24, 24);
-            this.PreviousBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PreviousBtn.TabIndex = 17;
-            this.PreviousBtn.TabStop = false;
-            this.PreviousBtn.Zoom = 10;
-            // 
-            // PlayPtn
-            // 
-            this.PlayPtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.PlayPtn.BackColor = System.Drawing.Color.Transparent;
-            this.PlayPtn.Image = ((System.Drawing.Image)(resources.GetObject("PlayPtn.Image")));
-            this.PlayPtn.ImageActive = null;
-            this.PlayPtn.Location = new System.Drawing.Point(300, 24);
-            this.PlayPtn.Name = "PlayPtn";
-            this.PlayPtn.Size = new System.Drawing.Size(24, 24);
-            this.PlayPtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PlayPtn.TabIndex = 14;
-            this.PlayPtn.TabStop = false;
-            this.PlayPtn.Zoom = 10;
-            // 
-            // StopBtn
-            // 
-            this.StopBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.StopBtn.BackColor = System.Drawing.Color.Transparent;
-            this.StopBtn.Image = ((System.Drawing.Image)(resources.GetObject("StopBtn.Image")));
-            this.StopBtn.ImageActive = null;
-            this.StopBtn.Location = new System.Drawing.Point(360, 24);
-            this.StopBtn.Name = "StopBtn";
-            this.StopBtn.Size = new System.Drawing.Size(24, 24);
-            this.StopBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.StopBtn.TabIndex = 16;
-            this.StopBtn.TabStop = false;
-            this.StopBtn.Zoom = 10;
-            // 
-            // bunifuImageButton5
-            // 
-            this.bunifuImageButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuImageButton5.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton5.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton5.Image")));
-            this.bunifuImageButton5.ImageActive = null;
-            this.bunifuImageButton5.Location = new System.Drawing.Point(494, 32);
-            this.bunifuImageButton5.Name = "bunifuImageButton5";
-            this.bunifuImageButton5.Size = new System.Drawing.Size(28, 22);
-            this.bunifuImageButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton5.TabIndex = 13;
-            this.bunifuImageButton5.TabStop = false;
-            this.bunifuImageButton5.Zoom = 10;
-            // 
-            // PauseBtn
-            // 
-            this.PauseBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.PauseBtn.BackColor = System.Drawing.Color.Transparent;
-            this.PauseBtn.Image = ((System.Drawing.Image)(resources.GetObject("PauseBtn.Image")));
-            this.PauseBtn.ImageActive = null;
-            this.PauseBtn.Location = new System.Drawing.Point(300, 24);
-            this.PauseBtn.Name = "PauseBtn";
-            this.PauseBtn.Size = new System.Drawing.Size(24, 24);
-            this.PauseBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PauseBtn.TabIndex = 15;
-            this.PauseBtn.TabStop = false;
-            this.PauseBtn.Zoom = 10;
-            // 
-            // AudioLabel
-            // 
-            this.AudioLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.AudioLabel.AutoSize = true;
-            this.AudioLabel.BackColor = System.Drawing.Color.Transparent;
-            this.AudioLabel.Location = new System.Drawing.Point(610, 37);
-            this.AudioLabel.Name = "AudioLabel";
-            this.AudioLabel.Size = new System.Drawing.Size(25, 13);
-            this.AudioLabel.TabIndex = 12;
-            this.AudioLabel.Text = "100";
-            this.AudioLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // AudioSlider
-            // 
-            this.AudioSlider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.AudioSlider.BackColor = System.Drawing.Color.Transparent;
-            this.AudioSlider.BackgroudColor = System.Drawing.Color.DarkGray;
-            this.AudioSlider.BorderRadius = 0;
-            this.AudioSlider.IndicatorColor = System.Drawing.Color.RoyalBlue;
-            this.AudioSlider.Location = new System.Drawing.Point(527, 30);
-            this.AudioSlider.MaximumValue = 100;
-            this.AudioSlider.Name = "AudioSlider";
-            this.AudioSlider.Size = new System.Drawing.Size(82, 30);
-            this.AudioSlider.TabIndex = 9;
-            this.AudioSlider.Value = 100;
-            this.AudioSlider.ValueChanged += new System.EventHandler(this.AudioSlider_ValueChanged);
-            // 
-            // SongNameLabel
-            // 
-            this.SongNameLabel.AutoSize = true;
-            this.SongNameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.SongNameLabel.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SongNameLabel.Location = new System.Drawing.Point(2, 26);
-            this.SongNameLabel.Name = "SongNameLabel";
-            this.SongNameLabel.Size = new System.Drawing.Size(0, 26);
-            this.SongNameLabel.TabIndex = 11;
-            this.SongNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // RightCounterLabel
-            // 
-            this.RightCounterLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.RightCounterLabel.AutoSize = true;
-            this.RightCounterLabel.BackColor = System.Drawing.Color.Transparent;
-            this.RightCounterLabel.Location = new System.Drawing.Point(603, 14);
-            this.RightCounterLabel.Name = "RightCounterLabel";
-            this.RightCounterLabel.Size = new System.Drawing.Size(34, 13);
-            this.RightCounterLabel.TabIndex = 10;
-            this.RightCounterLabel.Text = "00:00";
-            this.RightCounterLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LeftCounterLabel
-            // 
-            this.LeftCounterLabel.AutoSize = true;
-            this.LeftCounterLabel.BackColor = System.Drawing.Color.Transparent;
-            this.LeftCounterLabel.Location = new System.Drawing.Point(5, 14);
-            this.LeftCounterLabel.Name = "LeftCounterLabel";
-            this.LeftCounterLabel.Size = new System.Drawing.Size(34, 13);
-            this.LeftCounterLabel.TabIndex = 9;
-            this.LeftCounterLabel.Text = "00:00";
-            this.LeftCounterLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // SongProgressBar
-            // 
-            this.SongProgressBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.SongProgressBar.BackColor = System.Drawing.Color.Silver;
-            this.SongProgressBar.BorderRadius = 5;
-            this.SongProgressBar.Location = new System.Drawing.Point(6, 3);
-            this.SongProgressBar.MaximumValue = 100;
-            this.SongProgressBar.Name = "SongProgressBar";
-            this.SongProgressBar.ProgressColor = System.Drawing.Color.Teal;
-            this.SongProgressBar.Size = new System.Drawing.Size(628, 10);
-            this.SongProgressBar.TabIndex = 0;
-            this.SongProgressBar.Value = 0;
-            // 
-            // Container
-            // 
-            this.Container.BackColor = System.Drawing.Color.DarkBlue;
-            this.Container.Controls.Add(this.base_screen1);
-            this.Container.Controls.Add(this.PlaylistBox);
-            this.Container.Controls.Add(this.PlayBtn);
-            this.Container.Controls.Add(this.MediaPlayer);
-            this.Container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Container.Location = new System.Drawing.Point(180, 0);
-            this.Container.Name = "Container";
-            this.Container.Size = new System.Drawing.Size(640, 550);
-            this.Container.TabIndex = 24;
-            // 
-            // base_screen1
-            // 
-            this.base_screen1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.base_screen1.Location = new System.Drawing.Point(0, 0);
-            this.base_screen1.Name = "base_screen1";
-            this.base_screen1.Size = new System.Drawing.Size(640, 550);
-            this.base_screen1.TabIndex = 29;
-            // 
-            // PlaylistBox
-            // 
-            this.PlaylistBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.PlaylistBox.BackColor = System.Drawing.Color.Navy;
-            this.PlaylistBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PlaylistBox.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PlaylistBox.ForeColor = System.Drawing.SystemColors.Menu;
-            this.PlaylistBox.FormattingEnabled = true;
-            this.PlaylistBox.ItemHeight = 26;
-            this.PlaylistBox.Location = new System.Drawing.Point(8, 14);
-            this.PlaylistBox.Name = "PlaylistBox";
-            this.PlaylistBox.Size = new System.Drawing.Size(620, 390);
-            this.PlaylistBox.TabIndex = 19;
-            this.PlaylistBox.SelectedIndexChanged += new System.EventHandler(this.PlaylistBox_SelectedIndexChanged);
-            // 
-            // PlayBtn
-            // 
-            this.PlayBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.PlayBtn.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.PlayBtn.FlatAppearance.BorderSize = 0;
-            this.PlayBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.PlayBtn.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PlayBtn.ForeColor = System.Drawing.SystemColors.Menu;
-            this.PlayBtn.Location = new System.Drawing.Point(30, 421);
-            this.PlayBtn.Name = "PlayBtn";
-            this.PlayBtn.Size = new System.Drawing.Size(150, 50);
-            this.PlayBtn.TabIndex = 20;
-            this.PlayBtn.Text = "Play";
-            this.PlayBtn.UseVisualStyleBackColor = false;
-            this.PlayBtn.Click += new System.EventHandler(this.PlayBtn_Click);
-            // 
-            // MediaPlayer
-            // 
-            this.MediaPlayer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MediaPlayer.Enabled = true;
-            this.MediaPlayer.Location = new System.Drawing.Point(0, 0);
-            this.MediaPlayer.Name = "MediaPlayer";
-            this.MediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MediaPlayer.OcxState")));
-            this.MediaPlayer.Size = new System.Drawing.Size(640, 550);
-            this.MediaPlayer.TabIndex = 30;
-            this.MediaPlayer.TabStop = false;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -757,22 +757,21 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Container.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.MediaPlayer)).EndInit();
+            this.ControlPanel.ResumeLayout(false);
+            this.ControlPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LoopBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NextBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PreviousBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PlayPauseBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShuffleBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).EndInit();
             this.LeftSidePanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MaxmizeBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoBtn)).EndInit();
-            this.ControlPanel.ResumeLayout(false);
-            this.ControlPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NextBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PreviousBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PlayPtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StopBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PauseBtn)).EndInit();
-            this.Container.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.MediaPlayer)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -797,9 +796,8 @@
         private Bunifu.Framework.UI.BunifuCustomLabel RightCounterLabel;
         private Bunifu.Framework.UI.BunifuCustomLabel LeftCounterLabel;
         private Bunifu.Framework.UI.BunifuProgressBar SongProgressBar;
-        private Bunifu.Framework.UI.BunifuImageButton StopBtn;
-        private Bunifu.Framework.UI.BunifuImageButton PauseBtn;
-        private Bunifu.Framework.UI.BunifuImageButton PlayPtn;
+        private Bunifu.Framework.UI.BunifuImageButton ShuffleBtn;
+        private Bunifu.Framework.UI.BunifuImageButton PlayPauseBtn;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton5;
         private Bunifu.Framework.UI.BunifuImageButton NextBtn;
         private Bunifu.Framework.UI.BunifuImageButton PreviousBtn;
@@ -810,8 +808,9 @@
         private System.Windows.Forms.ListBox PlaylistBox;
         private System.Windows.Forms.Button PlayBtn;
         private DesignTest.Base_screen base_screen1;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private Bunifu.Framework.UI.BunifuImageButton LoopBtn;
         private AxWMPLib.AxWindowsMediaPlayer MediaPlayer;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

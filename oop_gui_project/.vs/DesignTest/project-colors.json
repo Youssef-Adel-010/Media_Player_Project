@@ -5,6 +5,11 @@
       "ProjectGuid": "0b43528e-a63d-4d69-8e6f-78392868b261",
       "DisplayName": "MediaPlayer",
       "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 1
