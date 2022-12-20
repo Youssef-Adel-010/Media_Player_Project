@@ -101,12 +101,6 @@
     <Compile Include="Splash_Screen_Form.Designer.cs">
       <DependentUpon>Splash_Screen_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Youtube_Download_screen.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Youtube_Download_screen.Designer.cs">
-      <DependentUpon>Youtube_Download_screen.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="About_us.resx">
       <DependentUpon>About_us.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,9 +128,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Splash_Screen_Form.resx">
       <DependentUpon>Splash_Screen_Form.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Youtube_Download_screen.resx">
-      <DependentUpon>Youtube_Download_screen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

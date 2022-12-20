@@ -124,7 +124,6 @@ C:\oop_project\media_player\oop_gui_project\obj\Debug\MediaPlayer.csproj.CopyCom
 C:\oop_project\media_player\oop_gui_project\obj\Debug\DesignTest.exe
 C:\oop_project\media_player\oop_gui_project\obj\Debug\DesignTest.pdb
 C:\Users\pc\Documents\GitHub\Media_Player_Project\oop_gui_project\obj\Debug\DesignTest.Speech_read_screen.resources
-C:\Users\pc\Documents\GitHub\Media_Player_Project\oop_gui_project\obj\Debug\DesignTest.Youtube_Download_screen.resources
 C:\oop_gui_project2\media_player\media_player\oop_gui_project\obj\Debug\MediaPlayer.csproj.AssemblyReference.cache
 C:\oop_gui_project2\media_player\media_player\oop_gui_project\obj\Debug\MediaPlayer.csproj.SuggestedBindingRedirects.cache
 C:\oop_gui_project2\media_player\media_player\oop_gui_project\obj\Debug\Interop.WMPLib.dll

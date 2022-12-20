@@ -10,7 +10,6 @@ namespace oop_gui_project
 
         /// Global declarations of all screens.
         public Base_screen base_scr = new Base_screen();
-        public Youtube_download_screen yt_download_scr = new Youtube_download_screen();
         public About_us_screen about_scr = new About_us_screen();
         public Speech_read_screen speech_scr = new Speech_read_screen();
 
@@ -121,6 +120,7 @@ namespace oop_gui_project
             if (idx >= playlist.Count)
             {
                 if (_looping != 2) idx = playlist.Count - 1;
+                else if (_looping == 0) return;
                 else idx = 0;
             }
             if (_shuffled && shuffledList.Count != playlist.Count)
@@ -159,10 +159,6 @@ namespace oop_gui_project
         private void NowPlayingBtn_Click(object sender, EventArgs e)
         {
             ShowPlayer();
-        }
-        private void DownloadBtn_Click(object sender, EventArgs e)
-        {
-            AddUserControl(yt_download_scr);
         }
 
         private void AboutUsBtn_Click(object sender, EventArgs e)
@@ -284,12 +280,16 @@ namespace oop_gui_project
         {
             if (MediaPlayer.playState == WMPLib.WMPPlayState.wmppsPlaying)
             {
-                SongProgressBar.Value =(int) MediaPlayer.Ctlcontrols.currentPosition;
+                SongProgressBar.Value = Math.Min(
+                    (int)MediaPlayer.Ctlcontrols.currentPosition,
+                    (int)MediaPlayer.Ctlcontrols.currentItem.duration
+                    );
                 LeftCounterLabel.Text = MediaPlayer.Ctlcontrols.currentPositionString;
                 RightCounterLabel.Text = MediaPlayer.Ctlcontrols.currentItem.durationString.ToString();
             }
-            if (MediaPlayer.playState == WMPLib.WMPPlayState.wmppsMediaEnded)
+            if (MediaPlayer.playState == WMPLib.WMPPlayState.wmppsStopped && playlist.Count > 0)
             {
+                if (play_index == playlist.Count - 1 && _looping != 1) return;
                 if (_looping != 1) play_index++;
                 PlayFile(ref play_index);
             }

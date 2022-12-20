@@ -32,10 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.WelcomeScreen = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Container = new System.Windows.Forms.Panel();
-            this.base_screen1 = new DesignTest.Base_screen();
             this.PlaylistBox = new System.Windows.Forms.ListBox();
             this.PlayBtn = new System.Windows.Forms.Button();
-            this.MediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.ControlPanel = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.LoopBtn = new Bunifu.Framework.UI.BunifuImageButton();
@@ -54,17 +52,16 @@
             this.SpeechBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Home = new Bunifu.Framework.UI.BunifuFlatButton();
             this.AboutUsbtn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.FavoritesBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.MinimizeBtn = new Bunifu.Framework.UI.BunifuImageButton();
-            this.DownloadBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.MaxmizeBtn = new Bunifu.Framework.UI.BunifuImageButton();
             this.CloseBtn = new Bunifu.Framework.UI.BunifuImageButton();
             this.BrowseBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.NowPlayingBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.PlayListBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.LogoBtn = new Bunifu.Framework.UI.BunifuImageButton();
+            this.base_screen1 = new DesignTest.Base_screen();
+            this.MediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.Container.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MediaPlayer)).BeginInit();
             this.ControlPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LoopBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NextBtn)).BeginInit();
@@ -77,6 +74,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.MaxmizeBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MediaPlayer)).BeginInit();
             this.SuspendLayout();
             // 
             // WelcomeScreen
@@ -96,15 +94,6 @@
             this.Container.Name = "Container";
             this.Container.Size = new System.Drawing.Size(640, 550);
             this.Container.TabIndex = 24;
-            // 
-            // base_screen1
-            // 
-            this.base_screen1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.base_screen1.Location = new System.Drawing.Point(0, 0);
-            this.base_screen1.Margin = new System.Windows.Forms.Padding(4);
-            this.base_screen1.Name = "base_screen1";
-            this.base_screen1.Size = new System.Drawing.Size(640, 550);
-            this.base_screen1.TabIndex = 29;
             // 
             // PlaylistBox
             // 
@@ -136,17 +125,6 @@
             this.PlayBtn.Text = "Play";
             this.PlayBtn.UseVisualStyleBackColor = false;
             this.PlayBtn.Click += new System.EventHandler(this.PlayBtn_Click);
-            // 
-            // MediaPlayer
-            // 
-            this.MediaPlayer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MediaPlayer.Enabled = true;
-            this.MediaPlayer.Location = new System.Drawing.Point(0, 0);
-            this.MediaPlayer.Name = "MediaPlayer";
-            this.MediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MediaPlayer.OcxState")));
-            this.MediaPlayer.Size = new System.Drawing.Size(640, 550);
-            this.MediaPlayer.TabIndex = 30;
-            this.MediaPlayer.TabStop = false;
             // 
             // timer1
             // 
@@ -356,9 +334,7 @@
             this.LeftSidePanel.Controls.Add(this.SpeechBtn);
             this.LeftSidePanel.Controls.Add(this.Home);
             this.LeftSidePanel.Controls.Add(this.AboutUsbtn);
-            this.LeftSidePanel.Controls.Add(this.FavoritesBtn);
             this.LeftSidePanel.Controls.Add(this.MinimizeBtn);
-            this.LeftSidePanel.Controls.Add(this.DownloadBtn);
             this.LeftSidePanel.Controls.Add(this.MaxmizeBtn);
             this.LeftSidePanel.Controls.Add(this.CloseBtn);
             this.LeftSidePanel.Controls.Add(this.BrowseBtn);
@@ -438,7 +414,7 @@
             this.Home.IconVisible = true;
             this.Home.IconZoom = 48D;
             this.Home.IsTab = false;
-            this.Home.Location = new System.Drawing.Point(0, 150);
+            this.Home.Location = new System.Drawing.Point(0, 250);
             this.Home.Margin = new System.Windows.Forms.Padding(20);
             this.Home.Name = "Home";
             this.Home.Normalcolor = System.Drawing.Color.Transparent;
@@ -493,44 +469,6 @@
             this.AboutUsbtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AboutUsbtn.Click += new System.EventHandler(this.AboutUsBtn_Click);
             // 
-            // FavoritesBtn
-            // 
-            this.FavoritesBtn.Activecolor = System.Drawing.Color.RoyalBlue;
-            this.FavoritesBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.FavoritesBtn.BackColor = System.Drawing.Color.Transparent;
-            this.FavoritesBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.FavoritesBtn.BorderRadius = 0;
-            this.FavoritesBtn.ButtonText = "Add To Favorites";
-            this.FavoritesBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.FavoritesBtn.DisabledColor = System.Drawing.Color.Gray;
-            this.FavoritesBtn.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FavoritesBtn.Iconcolor = System.Drawing.Color.Transparent;
-            this.FavoritesBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("FavoritesBtn.Iconimage")));
-            this.FavoritesBtn.Iconimage_right = null;
-            this.FavoritesBtn.Iconimage_right_Selected = null;
-            this.FavoritesBtn.Iconimage_Selected = null;
-            this.FavoritesBtn.IconMarginLeft = 0;
-            this.FavoritesBtn.IconMarginRight = 0;
-            this.FavoritesBtn.IconRightVisible = true;
-            this.FavoritesBtn.IconRightZoom = 0D;
-            this.FavoritesBtn.IconVisible = true;
-            this.FavoritesBtn.IconZoom = 40D;
-            this.FavoritesBtn.IsTab = false;
-            this.FavoritesBtn.Location = new System.Drawing.Point(0, 350);
-            this.FavoritesBtn.Margin = new System.Windows.Forms.Padding(20);
-            this.FavoritesBtn.Name = "FavoritesBtn";
-            this.FavoritesBtn.Normalcolor = System.Drawing.Color.Transparent;
-            this.FavoritesBtn.OnHovercolor = System.Drawing.Color.RoyalBlue;
-            this.FavoritesBtn.OnHoverTextColor = System.Drawing.Color.White;
-            this.FavoritesBtn.Padding = new System.Windows.Forms.Padding(20);
-            this.FavoritesBtn.selected = false;
-            this.FavoritesBtn.Size = new System.Drawing.Size(180, 50);
-            this.FavoritesBtn.TabIndex = 5;
-            this.FavoritesBtn.Text = "Add To Favorites";
-            this.FavoritesBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.FavoritesBtn.Textcolor = System.Drawing.Color.White;
-            this.FavoritesBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
             // MinimizeBtn
             // 
             this.MinimizeBtn.BackColor = System.Drawing.Color.Transparent;
@@ -544,45 +482,6 @@
             this.MinimizeBtn.TabStop = false;
             this.MinimizeBtn.Zoom = 10;
             this.MinimizeBtn.Click += new System.EventHandler(this.MinimizeBtn_Click);
-            // 
-            // DownloadBtn
-            // 
-            this.DownloadBtn.Activecolor = System.Drawing.Color.RoyalBlue;
-            this.DownloadBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.DownloadBtn.BackColor = System.Drawing.Color.Transparent;
-            this.DownloadBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.DownloadBtn.BorderRadius = 0;
-            this.DownloadBtn.ButtonText = "Youtube Download";
-            this.DownloadBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DownloadBtn.DisabledColor = System.Drawing.Color.Gray;
-            this.DownloadBtn.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DownloadBtn.Iconcolor = System.Drawing.Color.Transparent;
-            this.DownloadBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("DownloadBtn.Iconimage")));
-            this.DownloadBtn.Iconimage_right = null;
-            this.DownloadBtn.Iconimage_right_Selected = null;
-            this.DownloadBtn.Iconimage_Selected = null;
-            this.DownloadBtn.IconMarginLeft = 0;
-            this.DownloadBtn.IconMarginRight = 0;
-            this.DownloadBtn.IconRightVisible = true;
-            this.DownloadBtn.IconRightZoom = 0D;
-            this.DownloadBtn.IconVisible = true;
-            this.DownloadBtn.IconZoom = 40D;
-            this.DownloadBtn.IsTab = false;
-            this.DownloadBtn.Location = new System.Drawing.Point(0, 400);
-            this.DownloadBtn.Margin = new System.Windows.Forms.Padding(20);
-            this.DownloadBtn.Name = "DownloadBtn";
-            this.DownloadBtn.Normalcolor = System.Drawing.Color.Transparent;
-            this.DownloadBtn.OnHovercolor = System.Drawing.Color.RoyalBlue;
-            this.DownloadBtn.OnHoverTextColor = System.Drawing.Color.White;
-            this.DownloadBtn.Padding = new System.Windows.Forms.Padding(20);
-            this.DownloadBtn.selected = false;
-            this.DownloadBtn.Size = new System.Drawing.Size(180, 50);
-            this.DownloadBtn.TabIndex = 4;
-            this.DownloadBtn.Text = "Youtube Download";
-            this.DownloadBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.DownloadBtn.Textcolor = System.Drawing.Color.White;
-            this.DownloadBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DownloadBtn.Click += new System.EventHandler(this.DownloadBtn_Click);
             // 
             // MaxmizeBtn
             // 
@@ -635,7 +534,7 @@
             this.BrowseBtn.IconVisible = true;
             this.BrowseBtn.IconZoom = 40D;
             this.BrowseBtn.IsTab = false;
-            this.BrowseBtn.Location = new System.Drawing.Point(0, 300);
+            this.BrowseBtn.Location = new System.Drawing.Point(0, 400);
             this.BrowseBtn.Margin = new System.Windows.Forms.Padding(20);
             this.BrowseBtn.Name = "BrowseBtn";
             this.BrowseBtn.Normalcolor = System.Drawing.Color.Transparent;
@@ -674,7 +573,7 @@
             this.NowPlayingBtn.IconVisible = true;
             this.NowPlayingBtn.IconZoom = 40D;
             this.NowPlayingBtn.IsTab = false;
-            this.NowPlayingBtn.Location = new System.Drawing.Point(0, 250);
+            this.NowPlayingBtn.Location = new System.Drawing.Point(0, 350);
             this.NowPlayingBtn.Margin = new System.Windows.Forms.Padding(20);
             this.NowPlayingBtn.Name = "NowPlayingBtn";
             this.NowPlayingBtn.Normalcolor = System.Drawing.Color.Transparent;
@@ -713,7 +612,7 @@
             this.PlayListBtn.IconVisible = true;
             this.PlayListBtn.IconZoom = 40D;
             this.PlayListBtn.IsTab = false;
-            this.PlayListBtn.Location = new System.Drawing.Point(0, 200);
+            this.PlayListBtn.Location = new System.Drawing.Point(0, 300);
             this.PlayListBtn.Margin = new System.Windows.Forms.Padding(20);
             this.PlayListBtn.Name = "PlayListBtn";
             this.PlayListBtn.Normalcolor = System.Drawing.Color.Transparent;
@@ -744,6 +643,26 @@
             this.LogoBtn.TabStop = false;
             this.LogoBtn.Zoom = 10;
             // 
+            // base_screen1
+            // 
+            this.base_screen1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.base_screen1.Location = new System.Drawing.Point(0, 0);
+            this.base_screen1.Margin = new System.Windows.Forms.Padding(4);
+            this.base_screen1.Name = "base_screen1";
+            this.base_screen1.Size = new System.Drawing.Size(640, 550);
+            this.base_screen1.TabIndex = 29;
+            // 
+            // MediaPlayer
+            // 
+            this.MediaPlayer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MediaPlayer.Enabled = true;
+            this.MediaPlayer.Location = new System.Drawing.Point(0, 0);
+            this.MediaPlayer.Name = "MediaPlayer";
+            this.MediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MediaPlayer.OcxState")));
+            this.MediaPlayer.Size = new System.Drawing.Size(640, 550);
+            this.MediaPlayer.TabIndex = 30;
+            this.MediaPlayer.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -758,7 +677,6 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Container.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.MediaPlayer)).EndInit();
             this.ControlPanel.ResumeLayout(false);
             this.ControlPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LoopBtn)).EndInit();
@@ -772,6 +690,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.MaxmizeBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MediaPlayer)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -781,8 +700,6 @@
         private Bunifu.Framework.UI.BunifuElipse WelcomeScreen;
         private Bunifu.Framework.UI.BunifuGradientPanel LeftSidePanel;
         private Bunifu.Framework.UI.BunifuImageButton LogoBtn;
-        private Bunifu.Framework.UI.BunifuFlatButton FavoritesBtn;
-        private Bunifu.Framework.UI.BunifuFlatButton DownloadBtn;
         private Bunifu.Framework.UI.BunifuFlatButton BrowseBtn;
         private Bunifu.Framework.UI.BunifuFlatButton NowPlayingBtn;
         private Bunifu.Framework.UI.BunifuFlatButton PlayListBtn;
