@@ -84,20 +84,20 @@
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(30, 104);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(401, 116);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(354, 87);
             this.bunifuCustomLabel1.TabIndex = 1;
-            this.bunifuCustomLabel1.Text = "Professional Media Player,\r\nYouTube Video And Audio Downloader,\r\nAnd Speech Synth" +
-    "esizer.\r\nWe Hope You Enjoy Your Journey ;)\r\n";
+            this.bunifuCustomLabel1.Text = "The Professional Media Player,\r\nAnd Speech Synthesizer.\r\nWe Hope You Enjoy Your J" +
+    "ourney ;)\r\n";
             // 
             // bunifuCustomLabel2
             // 
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.White;
             this.bunifuCustomLabel2.Location = new System.Drawing.Point(22, 49);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(492, 45);
@@ -111,6 +111,7 @@
             this.Controls.Add(this.TheBaseScreenPanel);
             this.Controls.Add(this.bunifuCustomLabel6);
             this.Controls.Add(this.bunifuCustomLabel5);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "Base_screen";
             this.Size = new System.Drawing.Size(640, 443);
             this.TheBaseScreenPanel.ResumeLayout(false);

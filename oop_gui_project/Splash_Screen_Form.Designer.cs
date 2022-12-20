@@ -34,7 +34,6 @@
             this.SplashPanel = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.ProgressBarSplash = new System.Windows.Forms.ProgressBar();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -54,7 +53,6 @@
             this.SplashPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SplashPanel.Controls.Add(this.ProgressBarSplash);
             this.SplashPanel.Controls.Add(this.bunifuCustomLabel5);
-            this.SplashPanel.Controls.Add(this.bunifuCustomLabel4);
             this.SplashPanel.Controls.Add(this.bunifuCustomLabel3);
             this.SplashPanel.Controls.Add(this.bunifuCustomLabel2);
             this.SplashPanel.Controls.Add(this.bunifuCustomLabel1);
@@ -74,9 +72,9 @@
             // 
             this.ProgressBarSplash.BackColor = System.Drawing.Color.SkyBlue;
             this.ProgressBarSplash.ForeColor = System.Drawing.Color.MediumBlue;
-            this.ProgressBarSplash.Location = new System.Drawing.Point(0, 540);
+            this.ProgressBarSplash.Location = new System.Drawing.Point(-3, 540);
             this.ProgressBarSplash.Name = "ProgressBarSplash";
-            this.ProgressBarSplash.Size = new System.Drawing.Size(841, 10);
+            this.ProgressBarSplash.Size = new System.Drawing.Size(833, 10);
             this.ProgressBarSplash.TabIndex = 7;
             // 
             // bunifuCustomLabel5
@@ -85,23 +83,11 @@
             this.bunifuCustomLabel5.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel5.Font = new System.Drawing.Font("Calibri Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(60, 207);
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(60, 182);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
             this.bunifuCustomLabel5.Size = new System.Drawing.Size(460, 23);
             this.bunifuCustomLabel5.TabIndex = 6;
             this.bunifuCustomLabel5.Text = "Story Teller Provided With Speech Synthesizing  Technology.";
-            // 
-            // bunifuCustomLabel4
-            // 
-            this.bunifuCustomLabel4.AutoSize = true;
-            this.bunifuCustomLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Calibri Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(60, 183);
-            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(372, 23);
-            this.bunifuCustomLabel4.TabIndex = 5;
-            this.bunifuCustomLabel4.Text = "Best Downloader For Youtube Video and Audio.";
             // 
             // bunifuCustomLabel3
             // 
@@ -109,7 +95,7 @@
             this.bunifuCustomLabel3.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("Calibri Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(60, 158);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(60, 155);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
             this.bunifuCustomLabel3.Size = new System.Drawing.Size(582, 23);
             this.bunifuCustomLabel3.TabIndex = 4;
@@ -121,7 +107,7 @@
             this.bunifuCustomLabel2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(60, 230);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(60, 212);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(171, 19);
             this.bunifuCustomLabel2.TabIndex = 2;
@@ -179,7 +165,6 @@
         private Bunifu.Framework.UI.BunifuElipse SplashScreen;
         private Bunifu.Framework.UI.BunifuGradientPanel SplashPanel;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;

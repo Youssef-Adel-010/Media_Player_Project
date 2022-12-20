@@ -67,10 +67,5 @@ namespace DesignTest
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
-        private void PasswordTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

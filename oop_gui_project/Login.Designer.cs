@@ -270,7 +270,6 @@
             this.PasswordTextBox.Name = "PasswordTextBox";
             this.PasswordTextBox.Size = new System.Drawing.Size(224, 19);
             this.PasswordTextBox.TabIndex = 1;
-            this.PasswordTextBox.TextChanged += new System.EventHandler(this.PasswordTextBox_TextChanged);
             // 
             // UserTextBox
             // 
