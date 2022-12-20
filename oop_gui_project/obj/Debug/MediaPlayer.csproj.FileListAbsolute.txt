@@ -243,3 +243,31 @@ C:\GUI_PROJECT 3\oop_gui_project\obj\Debug\MediaPlayer.csproj.GenerateResource.c
 C:\GUI_PROJECT 3\oop_gui_project\obj\Debug\MediaPlayer.csproj.CoreCompileInputs.cache
 C:\GUI_PROJECT 3\oop_gui_project\obj\Debug\DesignTest.exe
 C:\GUI_PROJECT 3\oop_gui_project\obj\Debug\DesignTest.pdb
+C:\oop_gui_project\oop_gui_project\bin\Debug\DesignTest.exe.config
+C:\oop_gui_project\oop_gui_project\bin\Debug\DesignTest.exe
+C:\oop_gui_project\oop_gui_project\bin\Debug\DesignTest.pdb
+C:\oop_gui_project\oop_gui_project\bin\Debug\Bunifu_UI_v1.52.dll
+C:\oop_gui_project\oop_gui_project\bin\Debug\Newtonsoft.Json.dll
+C:\oop_gui_project\oop_gui_project\bin\Debug\Tabulate.NET.dll
+C:\oop_gui_project\oop_gui_project\bin\Debug\YoutubeExtractor.dll
+C:\oop_gui_project\oop_gui_project\bin\Debug\Newtonsoft.Json.xml
+C:\oop_gui_project\oop_gui_project\bin\Debug\YoutubeExtractor.xml
+C:\oop_gui_project\oop_gui_project\bin\Debug\Interop.WMPLib.dll
+C:\oop_gui_project\oop_gui_project\bin\Debug\AxInterop.WMPLib.dll
+C:\oop_gui_project\oop_gui_project\obj\Debug\MediaPlayer.csproj.AssemblyReference.cache
+C:\oop_gui_project\oop_gui_project\obj\Debug\MediaPlayer.csproj.SuggestedBindingRedirects.cache
+C:\oop_gui_project\oop_gui_project\obj\Debug\Interop.WMPLib.dll
+C:\oop_gui_project\oop_gui_project\obj\Debug\AxInterop.WMPLib.dll
+C:\oop_gui_project\oop_gui_project\obj\Debug\MediaPlayer.csproj.ResolveComReference.cache
+C:\oop_gui_project\oop_gui_project\obj\Debug\DesignTest.About_us_screen.resources
+C:\oop_gui_project\oop_gui_project\obj\Debug\DesignTest.Base_screen.resources
+C:\oop_gui_project\oop_gui_project\obj\Debug\DesignTest.Login.resources
+C:\oop_gui_project\oop_gui_project\obj\Debug\oop_gui_project.MainForm.resources
+C:\oop_gui_project\oop_gui_project\obj\Debug\DesignTest.Properties.Resources.resources
+C:\oop_gui_project\oop_gui_project\obj\Debug\DesignTest.Speech_read_screen.resources
+C:\oop_gui_project\oop_gui_project\obj\Debug\DesignTest.Splash_Screen_Form.resources
+C:\oop_gui_project\oop_gui_project\obj\Debug\MediaPlayer.csproj.GenerateResource.cache
+C:\oop_gui_project\oop_gui_project\obj\Debug\MediaPlayer.csproj.CoreCompileInputs.cache
+C:\oop_gui_project\oop_gui_project\obj\Debug\MediaPlayer.csproj.CopyComplete
+C:\oop_gui_project\oop_gui_project\obj\Debug\DesignTest.exe
+C:\oop_gui_project\oop_gui_project\obj\Debug\DesignTest.pdb
